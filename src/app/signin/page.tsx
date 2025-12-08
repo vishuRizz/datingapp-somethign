@@ -14,8 +14,8 @@ export default function SignInPage() {
         provider: "google",
       });
 
-      if (res.redirect) window.location.href = res.redirect;
-      if (res.redirectTo) window.location.href = res.redirectTo;
+      // if (res.redirect) window.location.href = res.redirect;
+      // if (res.redirectTo) window.location.href = res.redirectTo;
 
     } catch (err) {
       console.error("Google signin failed:", err);
