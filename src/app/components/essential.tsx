@@ -1,26 +1,26 @@
 import React from 'react';
-import { Check, Shield, Calendar, ArrowRight } from 'lucide-react';
+import { Check, FileText, BookOpen, Brain, ArrowRight } from 'lucide-react';
 
 export default function FortifyFeaturesPage() {
-  const userActivityData = [
-    { name: 'Acme Co.', type: 'Structural', risk: 'Moderate', score: '56.4', riskColor: 'bg-green-500' },
-    { name: 'Abstergo Ltd.', type: 'Migrated', risk: 'High', score: '1254.23', riskColor: 'bg-red-500' },
-    { name: 'Biffco Ltd.', type: 'Residual', risk: 'High', score: '565.23', riskColor: 'bg-red-500' },
-    { name: 'Barone LLC.', type: 'Structural', risk: 'Moderate', score: '587.4', riskColor: 'bg-green-500' },
-    { name: 'Abstergo Ltd.', type: 'Migrated', risk: 'High', score: '1254.23', riskColor: 'bg-red-500' },
+  const projectFiles = [
+    { name: 'Chapter 1: Introduction', type: 'Markdown', status: 'Draft', words: '2,450', statusColor: 'bg-yellow-500' },
+    { name: 'Literature Review', type: 'Markdown', status: 'Review', words: '5,230', statusColor: 'bg-blue-500' },
+    { name: 'Research Notes', type: 'Text', status: 'Complete', words: '1,890', statusColor: 'bg-green-500' },
+    { name: 'References.pdf', type: 'PDF', status: 'Annotated', words: 'N/A', statusColor: 'bg-purple-500' },
+    { name: 'Bibliography', type: 'BibTeX', status: 'Complete', words: 'N/A', statusColor: 'bg-green-500' },
   ];
 
   return (
     <div className="min-h-screen bg-white px-6 py-16">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto text-center mb-20">
-        <p className="text-green-600 text-sm font-medium mb-4">Essential Feature</p>
+        <p className="text-green-600 text-sm font-medium mb-4">Essential Features</p>
         <h1 className="text-6xl font-bold mb-6 text-black">
-          Discover the Features That<br />Makes Fortify Stand Out.
+          Discover the Features That<br />Make Intellirite Stand Out
         </h1>
         <p className="text-gray-600 text-lg">
-          Your Trusted Partner in Data Protection with Cutting-Edge Solutions for<br />
-          Comprehensive Data Security.
+          The first real Writing IDE with whole-project AI context, built-in citations,<br />
+          and multi-file workflows designed for academic and professional writing.
         </p>
       </div>
 
@@ -28,67 +28,67 @@ export default function FortifyFeaturesPage() {
       <div className="max-w-7xl mx-auto space-y-8">
         {/* First Feature Row */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* User Activity Feature */}
+          {/* Project Files Feature */}
           <div className="bg-gray-50 rounded-3xl p-8 relative overflow-hidden">
             <div className="flex items-center gap-3 mb-2">
-              <h2 className="text-2xl font-semibold text-black">User Activity in the System</h2>
-              <span className="bg-black text-white text-xs px-3 py-1 rounded-full">4 New</span>
+              <h2 className="text-2xl font-semibold text-black">Project Files</h2>
+              <span className="bg-black text-white text-xs px-3 py-1 rounded-full">5 Files</span>
             </div>
-            <p className="text-gray-600 text-sm mb-6">Viewing last 24 hours report</p>
+            <p className="text-gray-600 text-sm mb-6">All files in your writing project</p>
 
             {/* Table */}
             <div className="space-y-3">
               {/* Table Header */}
               <div className="grid grid-cols-4 gap-4 text-sm font-medium text-gray-700 pb-2 border-b border-gray-200">
-                <div>Name</div>
+                <div>File Name</div>
                 <div>Type</div>
-                <div>Risk Level</div>
-                <div>Avg. Score</div>
+                <div>Status</div>
+                <div>Words</div>
               </div>
 
               {/* Table Rows */}
-              {userActivityData.map((item, index) => (
+              {projectFiles.map((item, index) => (
                 <div key={index} className="grid grid-cols-4 gap-4 items-center text-sm py-2">
                   <div className="text-gray-800">{item.name}</div>
                   <div className="text-gray-600">{item.type}</div>
                   <div>
-                    <span className={`${item.riskColor} text-white px-3 py-1 rounded-full text-xs`}>
-                      {item.risk}
+                    <span className={`${item.statusColor} text-white px-3 py-1 rounded-full text-xs`}>
+                      {item.status}
                     </span>
                   </div>
-                  <div className="text-gray-800">{item.score}</div>
+                  <div className="text-gray-800">{item.words}</div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Organize Data Feature */}
+          {/* Organize Research Feature */}
           <div>
-            <h2 className="text-3xl font-semibold mb-6 text-black">Organize and understand data.</h2>
+            <h2 className="text-3xl font-semibold mb-6 text-black">Organize and understand your research.</h2>
             <p className="text-gray-600 mb-8">
-              Allows you to set thresholds for security parameters and receive real-time alerts when these thresholds are breached ensuring you stay informed f critical events.
+              AI has full access to all your chapters, notes, research papers, and citations. It can write new sections using all your research and maintain context across your entire project.
             </p>
 
             <div className="grid grid-cols-2 gap-6">
-              {/* Detailed User Logs */}
+              {/* PDF Extraction */}
               <div className="bg-gray-50 rounded-3xl p-6">
                 <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-4">
-                  <Shield className="w-6 h-6 text-white" />
+                  <FileText className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Detailed User Logs</h3>
+                <h3 className="text-lg font-semibold mb-2">PDF Extraction</h3>
                 <p className="text-gray-600 text-sm">
-                  Our platform regularly logs all user activities including logins.
+                  Extract text, citations, and notes from research PDFs. AI can summarize and reference content automatically.
                 </p>
               </div>
 
-              {/* Anomal */}
+              {/* Citation Management */}
               <div className="bg-gray-50 rounded-3xl p-6">
                 <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-4">
-                  <Calendar className="w-6 h-6 text-white" />
+                  <BookOpen className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Anomal</h3>
+                <h3 className="text-lg font-semibold mb-2">Citation Management</h3>
                 <p className="text-gray-600 text-sm">
-                  This includ and acces
+                  Native APA/MLA/Chicago formatting, auto-bibliography generation, and Zotero integration.
                 </p>
               </div>
             </div>
@@ -97,10 +97,10 @@ export default function FortifyFeaturesPage() {
 
         {/* Second Feature Row */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Security Summary Feature */}
+          {/* AI-Powered Writing Feature */}
           <div>
             <h2 className="text-4xl font-semibold mb-8 text-black">
-              Delivers an all-encompassing<br />security summary.
+              Whole-project AI context<br />for intelligent writing.
             </h2>
 
             <div className="space-y-4 mb-8">
@@ -109,7 +109,7 @@ export default function FortifyFeaturesPage() {
                   <Check className="w-5 h-5 text-white" />
                 </div>
                 <p className="text-gray-700">
-                  Our platform ensures that all sensitive data is encrypted both during transmission and while stored
+                  AI understands your entire project context - all chapters, notes, research papers, and citations in one unified workspace
                 </p>
               </div>
 
@@ -118,7 +118,7 @@ export default function FortifyFeaturesPage() {
                   <Check className="w-5 h-5 text-white" />
                 </div>
                 <p className="text-gray-700">
-                  Implement role-based access controls (RBAC) and multi-factor authentication (MFA).
+                  Write new sections using all your research. AI can reference multiple files simultaneously with #filename syntax
                 </p>
               </div>
 
@@ -127,7 +127,7 @@ export default function FortifyFeaturesPage() {
                   <Check className="w-5 h-5 text-white" />
                 </div>
                 <p className="text-gray-700">
-                  Regularly audit user access to sensitive information and systems to ensure compliance with security policies
+                  Maintain semantic understanding across 100K+ word projects. AI never loses sight of your research context
                 </p>
               </div>
             </div>
@@ -140,53 +140,49 @@ export default function FortifyFeaturesPage() {
             </button>
           </div>
 
-          {/* Security Metrics Feature */}
+          {/* Writing Metrics Feature */}
           <div className="bg-gray-50 rounded-3xl p-8">
             <div className="space-y-6">
-              {/* Detected Threats */}
+              {/* Project Statistics */}
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-gray-700 font-medium">2. Number of Detected Threats</span>
+                  <span className="text-gray-700 font-medium">Project Statistics</span>
                   <div className="flex gap-2">
-                    <span className="bg-lime-300 px-4 py-2 rounded-lg text-sm font-medium">34 risks</span>
-                    <span className="bg-orange-400 px-4 py-2 rounded-lg text-sm font-medium">23 risks</span>
-                    <span className="bg-orange-600 px-4 py-2 rounded-lg text-sm font-medium text-white">9 risks</span>
+                    <span className="bg-lime-300 px-4 py-2 rounded-lg text-sm font-medium">5 files</span>
+                    <span className="bg-blue-400 px-4 py-2 rounded-lg text-sm font-medium text-white">9,570 words</span>
+                    <span className="bg-purple-500 px-4 py-2 rounded-lg text-sm font-medium text-white">12 citations</span>
                   </div>
                 </div>
               </div>
 
-              {/* Incident Response Time */}
+              {/* Writing Progress */}
               <div className="bg-white rounded-2xl p-6">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <p className="text-gray-600 text-sm mb-1">Incident Response Time</p>
+                    <p className="text-gray-600 text-sm mb-1">Writing Progress</p>
                     <div className="flex items-baseline gap-2">
-                      <span className="text-4xl font-bold">125.46</span>
-                      <span className="text-green-600 text-sm font-medium">15.23%</span>
+                      <span className="text-4xl font-bold">68%</span>
+                      <span className="text-green-600 text-sm font-medium">+12% this week</span>
                     </div>
                   </div>
                   <div className="flex gap-4 items-center">
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 bg-pink-300 rounded-full"></div>
-                      <span className="text-xs text-gray-600">Malware</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 bg-pink-300 rounded-full"></div>
-                      <span className="text-xs text-gray-600">Malware</span>
+                      <Brain className="w-6 h-6 text-purple-500" />
+                      <span className="text-xs text-gray-600">AI Assisted</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Compliance Check */}
+              {/* Citation Compliance */}
               <div className="bg-white rounded-2xl p-6">
-                <h3 className="text-xl font-semibold mb-2">Compliance check in progress</h3>
-                <p className="text-gray-600 text-sm mb-4">Viewing 24h report</p>
+                <h3 className="text-xl font-semibold mb-2">Citation Compliance</h3>
+                <p className="text-gray-600 text-sm mb-4">APA Format Check</p>
                 <div className="flex items-center gap-4">
                   <div className="flex-1 bg-gray-200 rounded-full h-3">
-                    <div className="bg-green-500 h-3 rounded-full" style={{ width: '54%' }}></div>
+                    <div className="bg-green-500 h-3 rounded-full" style={{ width: '92%' }}></div>
                   </div>
-                  <span className="text-sm font-medium">54%</span>
+                  <span className="text-sm font-medium">92%</span>
                 </div>
               </div>
             </div>

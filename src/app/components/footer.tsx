@@ -21,10 +21,10 @@ const FortifyFooter = () => {
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <span className="text-2xl font-bold text-gray-900">Fortify</span>
+              <span className="text-2xl font-bold text-gray-900">Intellirite</span>
             </div>
             <p className="text-gray-600 text-sm leading-relaxed mb-8">
-              Securing Your Digital World: Your Trusted Partner in Data Protection with Cutting Edge Solutions for Data Security.
+              The AI-Powered Writing IDE for Students, Researchers, and Serious Writers. Write with Intelligence.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-gray-900 transition-colors">
@@ -71,7 +71,7 @@ const FortifyFooter = () => {
             <div>
               <h3 className="text-gray-900 font-semibold text-xl mb-2">Subscribe to Our Newsletter!</h3>
               <p className="text-gray-600 text-sm">
-                Stay Informed with Our Latest Security Insights - Subscribe to Our Newsletter!
+                Stay informed with our latest writing tips, AI features, and academic workflow insights.
               </p>
             </div>
             
@@ -93,7 +93,7 @@ const FortifyFooter = () => {
           </div>
           
           <div className="mt-8 text-center text-gray-600 text-sm">
-            Copyright © 2025 Fortify
+            Copyright © 2025 Intellirite
           </div>
         </div>
       </div>

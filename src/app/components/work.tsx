@@ -1,23 +1,72 @@
-import React from 'react';
-import { Shield, Network, Clock } from 'lucide-react';
+import React from "react";
+import {
+  FileText,
+  Brain,
+  BookOpen,
+  Shield,
+  Edit3,
+  CheckCircle,
+  Users,
+  Headphones,
+  FileSearch,
+} from "lucide-react";
 
 export default function HowItWorks() {
   const features = [
     {
+      icon: FileText,
+      title: "Multi-File Writing Workspace",
+      description:
+        "Open .md, .txt, .docx, .pdf, and .bib files as tabs. Organize your entire project in one unified workspace.",
+    },
+    {
+      icon: Edit3,
+      title: "Inline AI Text Editor",
+      description:
+        "AI-powered writing assistance directly in your editor. Get suggestions, rewrites, and improvements as you type.",
+    },
+    {
+      icon: Brain,
+      title: "Whole-Project AI Context",
+      description:
+        "AI has full access to all your chapters, notes, and research papers. Maintain context across 100K+ word projects.",
+    },
+    {
       icon: Shield,
-      title: "Advanced Detection",
-      description: "Our system continuously monitors your network and data environments for any suspicious activities."
+      title: "AI Writing with No Plagiarism",
+      description:
+        "Generate original, plagiarism-free content with built-in detection. Every section checked automatically for academic integrity.",
     },
     {
-      icon: Network,
-      title: "Robust Data Encryption",
-      description: "We ensure that all sensitive data is encrypted and at rest, using industry-standard encryption protocols."
+      icon: BookOpen,
+      title: "Built-in Citation Engine",
+      description:
+        "Native APA/MLA/Chicago formatting, auto-bibliography generation, and Zotero integration.",
     },
     {
-      icon: Clock,
-      title: "Automated Response",
-      description: "In the event of a security incident, our automated response system takes immediate action."
-    }
+      icon: CheckCircle,
+      title: "Papers Pass Turnitin",
+      description:
+        "Our AI-generated content is designed to pass Turnitin and other plagiarism detection systems with original, cited work.",
+    },
+    {
+      icon: Users,
+      title: "Real-Time Collaborative Workspace",
+      description:
+        "Work together seamlessly with real-time synchronization. Multiple team members can edit simultaneously with live updates.",
+    },
+    {
+      icon: Headphones,
+      title: "Convert Papers to Podcasts",
+      description:
+        "Transform your research papers into audio podcasts. Listen to your work on the go and share with others.",
+    },
+    {
+      icon: FileSearch,
+      title: "PDF Summarizing",
+      description:
+        "Upload PDFs and get instant AI-powered summaries. Extract key points, citations, and insights from research papers.",
+    },
   ];
 
   return (
@@ -29,32 +78,30 @@ export default function HowItWorks() {
             How it Works
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            How Fortify Security Solution Works
+            How Intellirite Works
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Your Trusted Partner in Data Protection with Cutting-Edge Solutions for
-            Comprehensive Data Security.
+            A Writing IDE that merges Google Docs' simplicity, Cursor's AI
+            intelligence, Zotero's citation power, and Scrivener's multi-file
+            writing into one unified environment.
           </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Features List - No Card Style */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="flex justify-center mb-4">
-            <div className="w-14 h-14 bg-[#C7F36A] rounded-full flex items-center justify-center">
-              <feature.icon className="w-7 h-7 text-white" />
-            </div>
-          </div>
-              <h3 className="text-xl font-bold text-gray-900 text-center mb-3">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600 text-center leading-relaxed text-sm">
-                {feature.description}
-              </p>
+            <div key={index} className="flex items-start gap-4 py-4">
+              <div className="w-10 h-10 bg-[#C7F36A] rounded-lg flex items-center justify-center shrink-0">
+                <feature.icon className="w-5 h-5 text-gray-900" />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-base font-bold text-gray-900 mb-1">
+                  {feature.title}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

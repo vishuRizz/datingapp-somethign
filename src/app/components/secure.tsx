@@ -8,11 +8,10 @@ export default function SecurityFeatures() {
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-teal-600 text-sm font-medium mb-4">Key Features</p>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            In-Depth Explanation of Our<br />Web Security Features
+            The Writing IDE That<br />Understands Your Entire Project
           </h1>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-            Your Trusted Partner in Data Protection with Cutting-Edge Solutions for
-            Comprehensive Data Security.
+            Unlike ChatGPT (no file awareness) or Google Docs (no project structure), Intellirite combines multi-file IDE workspace with semantic indexing and AI context awareness.
           </p>
         </div>
       </div>
@@ -20,22 +19,21 @@ export default function SecurityFeatures() {
       {/* Features Section */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-          {/* Feature 1 - Risk Evaluation */}
+          {/* Feature 1 - AI Chat Sidebar */}
           <div className="bg-gray-100 rounded-3xl p-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Continuously evaluates potential<br />security threats and impact
+              AI Chat Sidebar with<br />Document Editing (Cursor-style)
             </h2>
             <p className="text-gray-600 mb-8">
-              This includes suggesting security patches, policy updates, and other preventive
-              measures to reduce the likelihood and impact of threats.
+              Chat with your project and ask questions about your research. The AI can rewrite entire sections with project awareness, suggest improvements across multiple documents, and maintain citation context throughout.
             </p>
 
-            {/* Risk Chart */}
+            {/* AI Context Chart */}
             <div className="bg-white rounded-2xl p-6">
               <div className="flex justify-between items-center mb-6">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Impact of Risk</h3>
-                  <p className="text-sm text-gray-500">Viewing last 24 hours report</p>
+                  <h3 className="text-xl font-bold text-gray-900">AI Context Coverage</h3>
+                  <p className="text-sm text-gray-500">Project files indexed and accessible</p>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="bg-gray-900 text-white text-xs px-3 py-1 rounded-full">4 New</span>
@@ -94,22 +92,24 @@ export default function SecurityFeatures() {
             </div>
           </div>
 
-          {/* Feature 2 - Security Status */}
-          <div className="bg-gray-100 rounded-3xl p-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Presents a view of your organization<br />security posture
-            </h2>
+          {/* Feature 2 - AI Writing with No Plagiarism */}
+          <div className="bg-gray-100 rounded-3xl p-8 border-2 border-[#4CAF50]">
+            <div className="flex items-center gap-3 mb-4">
+              <h2 className="text-3xl font-bold text-gray-900">
+                AI Writing with<br />No Plagiarism
+              </h2>
+              <span className="bg-[#4CAF50] text-white text-xs px-3 py-1 rounded-full font-semibold">FEATURED</span>
+            </div>
             <p className="text-gray-600 mb-8">
-              Allows you to set thresholds for security parameters and receive real-time alerts
-              when these thresholds are breached ensuring you stay informed f critical events.
+              Generate original, plagiarism-free content with built-in real-time plagiarism detection. Every AI-generated section is automatically checked to ensure academic integrity and 100% originality. Perfect for students, researchers, and academic writers.
             </p>
 
-            {/* Security Status Chart */}
+            {/* Project Status Chart */}
             <div className="bg-white rounded-2xl p-6">
               <div className="flex justify-between items-center mb-6">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Security Status</h3>
-                  <p className="text-sm text-gray-500">Viewing last 24 hours report</p>
+                  <h3 className="text-xl font-bold text-gray-900">Project Status</h3>
+                  <p className="text-sm text-gray-500">Writing progress across sections</p>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="bg-gray-900 text-white text-xs px-3 py-1 rounded-full">4 New</span>
@@ -122,65 +122,73 @@ export default function SecurityFeatures() {
               {/* Horizontal Bar Chart */}
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
-                  <span className="text-sm text-gray-400 w-24">Operational</span>
+                  <span className="text-sm text-gray-400 w-24">Introduction</span>
                   <div className="flex-1 bg-gray-100 rounded-full h-8">
-                    <div className="bg-lime-300 h-8 rounded-full" style={{width: '65%'}}></div>
+                    <div className="bg-lime-300 h-8 rounded-full" style={{width: '90%'}}></div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <span className="text-sm text-gray-400 w-24">Structural</span>
+                  <span className="text-sm text-gray-400 w-24">Literature Review</span>
                   <div className="flex-1 bg-gray-100 rounded-full h-8">
-                    <div className="bg-lime-300 h-8 rounded-full" style={{width: '80%'}}></div>
+                    <div className="bg-lime-300 h-8 rounded-full" style={{width: '75%'}}></div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <span className="text-sm text-gray-400 w-24">Reputational</span>
+                  <span className="text-sm text-gray-400 w-24">Methodology</span>
                   <div className="flex-1 bg-gray-100 rounded-full h-8">
                     <div className="bg-lime-300 h-8 rounded-full" style={{width: '60%'}}></div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <span className="text-sm text-gray-400 w-24">Accidental</span>
+                  <span className="text-sm text-gray-400 w-24">Conclusion</span>
                   <div className="flex-1 bg-gray-100 rounded-full h-8">
-                    <div className="bg-lime-300 h-8 rounded-full" style={{width: '70%'}}></div>
+                    <div className="bg-lime-300 h-8 rounded-full" style={{width: '45%'}}></div>
                   </div>
                 </div>
               </div>
 
               {/* Timeline */}
               <div className="flex justify-between mt-6 text-xs text-gray-400">
-                <span>Jan</span>
-                <span>Feb</span>
-                <span>Mar</span>
-                <span>Apr</span>
+                <span>Week 1</span>
+                <span>Week 2</span>
+                <span>Week 3</span>
+                <span>Week 4</span>
               </div>
 
               {/* Legend */}
               <div className="flex gap-6 mt-4 text-xs">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-lime-300 rounded-full"></div>
-                  <span className="text-gray-600">Security Events</span>
+                  <span className="text-gray-600">Writing Progress</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-gray-300 rounded-full"></div>
-                  <span className="text-gray-600">Login Attempts</span>
+                  <span className="text-gray-600">AI Edits</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Feature 3 - Data Activity */}
+        {/* Feature 3 - Semantic Indexing */}
+        <div className="bg-gray-100 rounded-3xl p-8 mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Semantic Indexing of<br />Entire Project
+          </h2>
+          <p className="text-gray-600 mb-8">
+            All files, PDFs, and research notes are semantically indexed. When you ask a question, the system automatically pulls relevant sections from across your project, maintaining understanding across 100K+ word projects.
+          </p>
+        </div>
+
+        {/* Feature 4 - Research Integration */}
         <div className="bg-gray-100 rounded-3xl p-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Monitors and logs all the<br />data access events
+                Integrated Research<br />Workflow
               </h2>
               <p className="text-gray-600 mb-8">
-                Monitors and logs all data access events, including who accessed what data, when,
-                and from where. This provides a clear audit trail for compliance and security
-                investigations.
+                PDF extraction and AI summarization, highlight → annotation → auto-citation workflow. Research materials stored in project workspace with references automatically linked to citations in text.
               </p>
               <button className="bg-gray-900 text-white px-8 py-4 rounded-full flex items-center gap-3 hover:bg-gray-800 transition-colors">
                 Learn More
@@ -190,14 +198,14 @@ export default function SecurityFeatures() {
               </button>
             </div>
 
-            {/* Data Activity Chart */}
+            {/* Writing Activity Chart */}
             <div className="bg-white rounded-2xl p-6">
               <div className="flex justify-between items-start mb-6">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Data Activity</h3>
-                  <p className="text-sm text-gray-500">Viewing last 24 hours report</p>
+                  <h3 className="text-xl font-bold text-gray-900">Writing Activity</h3>
+                  <p className="text-sm text-gray-500">Words written this month</p>
                 </div>
-                <span className="bg-gray-900 text-white text-xs px-3 py-1 rounded-full">4 New</span>
+                <span className="bg-gray-900 text-white text-xs px-3 py-1 rounded-full">+2.4K</span>
               </div>
 
               {/* Bar Chart */}
@@ -233,12 +241,12 @@ export default function SecurityFeatures() {
               {/* Stats */}
               <div className="space-y-4">
                 <div>
-                  <div className="text-4xl font-bold text-gray-900 mb-1">2342</div>
-                  <div className="text-sm text-gray-600">Number of threats Detected</div>
+                  <div className="text-4xl font-bold text-gray-900 mb-1">9,570</div>
+                  <div className="text-sm text-gray-600">Total Words Written</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-gray-900 mb-1">7546</div>
-                  <div className="text-sm text-gray-600">Number of threats Eliminated</div>
+                  <div className="text-4xl font-bold text-gray-900 mb-1">127</div>
+                  <div className="text-sm text-gray-600">AI Suggestions Applied</div>
                 </div>
               </div>
 
@@ -246,11 +254,11 @@ export default function SecurityFeatures() {
               <div className="flex gap-6 mt-6 text-xs">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                  <span className="text-gray-600">Migrated Risk</span>
+                  <span className="text-gray-600">New Content</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-gray-300 rounded-full"></div>
-                  <span className="text-gray-600">Operational Risk</span>
+                  <span className="text-gray-600">Revisions</span>
                 </div>
               </div>
             </div>

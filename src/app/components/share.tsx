@@ -54,15 +54,14 @@ const HeroCard = () => {
           <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto">
             {/* Main Heading */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
-              Secure Your Data with
+              Write with Intelligence
               <br />
-              Fortify Protection Solution
+              The AI IDE for Writing
             </h1>
 
             {/* Subtext */}
             <p className="text-gray-300 text-sm md:text-base max-w-xl mb-6 leading-relaxed">
-              Allows you to set thresholds for security parameters and receive real-time
-              alerts when these thresholds are breached.
+              Join students, researchers, and serious writers who are using Intellirite to write better, faster, and with full project context.
             </p>
 
             {/* CTA Button */}
