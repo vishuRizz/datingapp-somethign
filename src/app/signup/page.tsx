@@ -2,15 +2,16 @@
 
 import { authClient } from "@/lib/auth-client";
 import { useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 
-export default function SignInPage() {
+export default function SignUpPage() {
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
   const searchParams = useSearchParams();
   // If no callback specified, redirect back to web app home after auth
   const callbackUrl = searchParams.get("callback") || "http://localhost:3001/auth/callback";
 
-  const signInWithGoogle = async () => {
+  const signUpWithGoogle = async () => {
     try {
       setLoading(true);
 
@@ -24,8 +25,8 @@ export default function SignInPage() {
         window.location.href = res.data.url;
       }
     } catch (err) {
-      console.error("Google signin failed:", err);
-      alert("Error signing in with Google");
+      console.error("Google signup failed:", err);
+      alert("Error signing up with Google");
     } finally {
       setLoading(false);
     }
@@ -33,10 +34,10 @@ export default function SignInPage() {
 
   return (
     <div style={{ padding: 40 }}>
-      <h1>Sign In</h1>
+      <h1>Sign Up</h1>
 
       <button
-        onClick={signInWithGoogle}
+        onClick={signUpWithGoogle}
         disabled={loading}
         style={{
           padding: "12px 20px",
@@ -45,10 +46,12 @@ export default function SignInPage() {
           borderRadius: 8,
           fontSize: 16,
           marginTop: 20,
+          cursor: loading ? "not-allowed" : "pointer",
         }}
       >
-        {loading ? "Loading..." : "Sign In with Google"}
+        {loading ? "Loading..." : "Sign Up with Google"}
       </button>
     </div>
   );
 }
+
