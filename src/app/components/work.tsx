@@ -58,14 +58,6 @@ export default function HowItWorks() {
             </div>
           ))}
         </div>
-
-        {/* CTA Button */}
-        <div className="mt-10 text-center">
-          <button className="group inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-xl font-medium hover:bg-[#4CAF50] transition-colors duration-300 text-lg">
-            <span className="transition-transform group-hover:translate-x-1">↗</span>
-            Get This Template
-          </button>
-        </div>
       </div>
     </div>
   );
