@@ -1,11 +1,18 @@
 "use client";
 
-import { useState } from "react";
-import { authClient } from "@/lib/auth-client";
+import Hero from "./components/hero";
+import DashboardLayout from "./components/stats";
+import HowItWorks from "./components/work";
+
+
+
 export default function HomePage() {
   return (
-<>
-<h1>test</h1>
-</>
-  )
+    <>
+      <Hero />
+      <DashboardLayout/>
+      <HowItWorks/>
+   
+    </>
+  );
 }
