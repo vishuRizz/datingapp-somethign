@@ -31,6 +31,7 @@ App runs on: http://localhost:5173
 
 ## How it works
 
+
 1. User opens Electron app
 2. Electron opens this web app in a browser window
 3. User clicks "Continue with Google"
