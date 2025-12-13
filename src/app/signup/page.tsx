@@ -1,14 +1,13 @@
 "use client";
 
+import { Suspense } from "react";
 import { authClient } from "@/lib/auth-client";
 import { useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
-export default function SignUpPage() {
+function SignUpContent() {
   const [loading, setLoading] = useState(false);
-  const router = useRouter();
   const searchParams = useSearchParams();
-  // If no callback specified, redirect back to web app home after auth
   const callbackUrl = searchParams.get("callback") || "http://localhost:3001/auth/callback";
 
   const signUpWithGoogle = async () => {
@@ -20,12 +19,10 @@ export default function SignUpPage() {
         callbackURL: callbackUrl,
       });
 
-      // BetterAuth returns redirect URL in the response
       if (res?.data && typeof res.data === 'object' && 'url' in res.data && typeof res.data.url === 'string') {
         window.location.href = res.data.url;
       }
-    } catch (err) {
-      console.error("Google signup failed:", err);
+    } catch {
       alert("Error signing up with Google");
     } finally {
       setLoading(false);
@@ -52,6 +49,14 @@ export default function SignUpPage() {
         {loading ? "Loading..." : "Sign Up with Google"}
       </button>
     </div>
+  );
+}
+
+export default function SignUpPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SignUpContent />
+    </Suspense>
   );
 }
 
