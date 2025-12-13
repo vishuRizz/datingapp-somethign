@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+google-service-account-key.json
+google-service-account-key-compact.json
+google-service-account-key-oneline.json
