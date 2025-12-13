@@ -10,6 +10,7 @@ Simple Next.js web app that handles Google OAuth for the Intellirite Electron ap
    npm install
    ```
 
+
 2. **Configure environment variables:**
    
    Edit `.env.local` and add your Google OAuth credentials:
