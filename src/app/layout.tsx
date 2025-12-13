@@ -1,5 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+
 import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 import SmoothScroll from "./components/SmoothScroll";
 
@@ -95,12 +97,6 @@ export const metadata: Metadata = {
   },
   category: "Education Technology",
   classification: "Writing Software",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-    themeColor: "#4CAF50",
-  },
   other: {
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black-translucent",
@@ -132,6 +128,13 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
     title: "Intellirite",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#4CAF50",
 };
 
 export default function RootLayout({

@@ -81,8 +81,8 @@ export default function HowItWorks() {
             How Intellirite Works
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A Writing IDE that merges Google Docs' simplicity, Cursor's AI
-            intelligence, Zotero's citation power, and Scrivener's multi-file
+            A Writing IDE that merges Google Docs&apos; simplicity, Cursor&apos;s AI
+            intelligence, Zotero&apos;s citation power, and Scrivener&apos;s multi-file
             writing into one unified environment.
           </p>
         </div>
