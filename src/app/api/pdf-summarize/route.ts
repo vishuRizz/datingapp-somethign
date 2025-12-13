@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 export const runtime = 'nodejs';
+export const maxDuration = 60; // Allow up to 60 seconds for processing large PDFs
 
 export async function POST(request: NextRequest) {
   try {
@@ -38,35 +39,70 @@ export async function POST(request: NextRequest) {
     // Extract text from PDF
     let pdfText: string;
     try {
-      // Load pdf-parse module dynamically
-      // @ts-ignore - Using eval to avoid Next.js static analysis
-      const pdfParseModule = eval('require')('pdf-parse');
+      // Load pdf-parse module - works in Node.js runtime with serverExternalPackages
+      // Using multiple fallback methods for different environments
+      let pdfParseModule: any;
+      
+      try {
+        // Try direct require first (works in Node.js runtime)
+        // @ts-ignore - require is available in Node.js runtime
+        pdfParseModule = require('pdf-parse');
+      } catch (requireError) {
+        // Fallback to eval require for environments that need it
+        try {
+          // @ts-ignore
+          const requireFunc = new Function('return require("pdf-parse")');
+          pdfParseModule = requireFunc();
+        } catch (evalError) {
+          throw new Error(`Failed to load pdf-parse module: ${requireError instanceof Error ? requireError.message : String(requireError)}`);
+        }
+      }
+      
+      if (!pdfParseModule) {
+        throw new Error('pdf-parse module is null or undefined');
+      }
+      
       const { PDFParse } = pdfParseModule;
       
       if (!PDFParse) {
-        throw new Error('PDFParse class not found in pdf-parse module');
+        // If PDFParse doesn't exist, try using the module directly
+        // Some versions might export differently
+        if (typeof pdfParseModule === 'function') {
+          // Legacy format - create instance directly
+          const parser = new pdfParseModule({ data: buffer });
+          const result = await parser.getText();
+          pdfText = result.text || '';
+        } else {
+          throw new Error('PDFParse class not found in pdf-parse module. Available exports: ' + Object.keys(pdfParseModule).join(', '));
+        }
+      } else {
+        // Create PDFParse instance with the buffer
+        const parser = new PDFParse({ data: buffer });
+        
+        // Extract text from PDF
+        const result = await parser.getText();
+        pdfText = result.text || '';
       }
       
-      // Create PDFParse instance with the buffer
-      const parser = new PDFParse({ data: buffer });
-      
-      // Extract text from PDF
-      const result = await parser.getText();
-      pdfText = result.text || '';
-      
       if (!pdfText || pdfText.trim().length === 0) {
-        throw new Error('PDF parsed successfully but no text content was extracted');
+        throw new Error('PDF parsed successfully but no text content was extracted. The PDF might contain only images or be empty.');
       }
     } catch (error: any) {
       console.error('PDF parse error:', error);
       console.error('Error message:', error?.message);
       console.error('Error stack:', error?.stack);
       console.error('Buffer length:', buffer?.length);
+      console.error('Error name:', error?.name);
       return NextResponse.json(
         { 
           error: 'Failed to extract text from PDF. Please ensure the PDF is valid and not corrupted.',
           details: error?.message || String(error),
-          errorType: error?.name || 'Unknown'
+          errorType: error?.name || 'Unknown',
+          debug: process.env.NODE_ENV === 'development' ? {
+            hasBuffer: !!buffer,
+            bufferLength: buffer?.length,
+            errorStack: error?.stack
+          } : undefined
         },
         { status: 400 }
       );
