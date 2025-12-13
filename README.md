@@ -6,6 +6,7 @@ Simple Next.js web app that handles Google OAuth for the Intellirite Electron ap
 
 1. **Install dependencies:**
    ```bash
+   
    npm install
    ```
 
