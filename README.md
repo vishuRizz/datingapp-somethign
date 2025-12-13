@@ -49,6 +49,8 @@ App runs on: http://localhost:5173
 
 ## Tech Stack
 
+
+
 - Next.js 16 (App Router)
 - BetterAuth (OAuth handling)
 - Tailwind CSS (Styling)
