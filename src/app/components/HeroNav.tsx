@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronDown, ArrowRight, Moon, Sun } from "lucide-react";
 import { useState } from "react";
 
@@ -29,8 +30,13 @@ export function HeroNav() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          
-          <span className="text-2xl font-semibold text-gray-900">Intellirite</span>
+          <Image
+            src={dark ? "/assets/2.svg" : "/assets/3.svg"}
+            alt="Intellirite"
+            width={140}
+            height={32}
+            priority
+          />
         </Link>
 
         {/* Desktop Links */}
