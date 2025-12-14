@@ -67,8 +67,9 @@ const HeroCard = () => {
             {/* CTA Button */}
             <button className="group relative inline-flex items-center gap-3 px-7 py-3.5 bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-500 hover:to-gray-600 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
               <span className="text-white text-base font-medium">Learn More</span>
-              <div className="flex items-center justify-center w-9 h-9 bg-[#C7F36A] rounded-full transition-transform duration-300 group-hover:translate-x-1">
-                <ArrowRight className="w-4 h-4 text-gray-900" strokeWidth={2.5} />
+              <div className="relative flex items-center justify-center w-9 h-9 bg-[#C7F36A] rounded-full overflow-hidden">
+                <ArrowRight className="w-4 h-4 text-gray-900 absolute transition-all duration-300 group-hover:translate-x-5 group-hover:opacity-0" strokeWidth={2.5} />
+                <ArrowRight className="w-4 h-4 text-gray-900 absolute opacity-0 -translate-x-1.5 transition-all duration-300 delay-200 group-hover:translate-x-0 group-hover:opacity-100" strokeWidth={2.5} />
               </div>
             </button>
           </div>

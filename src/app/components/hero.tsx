@@ -26,9 +26,14 @@ export default function Hero() {
 
         <div className="px-6 pt-20 pb-20 lg:pt-32 lg:pb-28">
           <HeroHeadline />
-          <HeroCTA />
+          <div className="mt-10 lg:mt-16">
+            <HeroCTA />
+          </div>
         </div>
       </div>
+
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 sm:w-32 z-[1] [background:radial-gradient(120px_60%_at_0%_50%,rgba(124,255,0,0.18)_0%,rgba(124,255,0,0.08)_35%,rgba(124,255,0,0)_70%)]" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 sm:w-32 z-[1] [background:radial-gradient(120px_60%_at_100%_50%,rgba(124,255,0,0.18)_0%,rgba(124,255,0,0.08)_35%,rgba(124,255,0,0)_70%)]" />
     </div>
   );
 }

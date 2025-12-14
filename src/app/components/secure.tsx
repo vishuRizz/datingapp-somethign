@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function SecurityFeatures() {
   return (
-    <div className="min-h-screen bg-white">
+    <div id="about" className="min-h-screen bg-white secure-black">
       {/* Hero Section */}
       <div className="bg-white py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
