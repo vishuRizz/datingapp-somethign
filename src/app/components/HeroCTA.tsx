@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export function HeroCTA() {
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 bg-linear-to-br from-gray-50 to-gray-100 py-4">
+    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 py-4">
 
       {/* Primary CTA */}
       <Link href="/get-started" className="group btn btn-primary">

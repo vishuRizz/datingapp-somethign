@@ -132,10 +132,11 @@ export default function FortifyFeaturesPage() {
               </div>
             </div>
 
-            <button className="bg-black text-white px-8 py-4 rounded-full flex items-center gap-3 hover:bg-gray-800 transition-colors">
-              Get Started
-              <div className="w-10 h-10 bg-lime-300 rounded-full flex items-center justify-center">
-                <ArrowRight className="w-5 h-5 text-black" />
+            <button className="group bg-black text-white px-8 py-4 rounded-full flex items-center gap-3 hover:bg-gray-800 transition-colors">
+              Learn More
+              <div className="relative w-10 h-10 bg-lime-300 rounded-full flex items-center justify-center overflow-hidden">
+                <ArrowRight className="w-5 h-5 text-black absolute transition-all duration-300 group-hover:translate-x-6 group-hover:opacity-0" />
+                <ArrowRight className="w-5 h-5 text-black absolute opacity-0 -translate-x-1.5 transition-all duration-300 delay-200 group-hover:translate-x-0 group-hover:opacity-100" />
               </div>
             </button>
           </div>

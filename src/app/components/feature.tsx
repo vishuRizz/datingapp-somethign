@@ -4,7 +4,7 @@ export default function FortifyFeaturePage() {
   const [imageUrl, setImageUrl] = useState("");
 
   return (
-    <div id="features" className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white">
       {/* Header Section */}
       <div className="text-center pt-12 pb-8 px-4">
         <p className="text-green-600 text-sm font-medium mb-4">Key Features</p>

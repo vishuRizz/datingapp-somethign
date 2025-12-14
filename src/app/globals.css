@@ -50,6 +50,11 @@ html[data-theme="dark"] .border-gray-200 { border-color: #333333; }
 html[data-theme="dark"] .text-gray-900 { color: #ededed; }
 html[data-theme="dark"] .text-gray-700 { color: #d0d0d0; }
 html[data-theme="dark"] .text-gray-600 { color: #b0b0b0; }
+html[data-theme="dark"] .text-black { color: #ffffff; }
+html[data-theme="dark"] .pricing-basic .text-gray-900,
+html[data-theme="dark"] .pricing-basic .text-gray-700,
+html[data-theme="dark"] .pricing-basic .text-gray-600 { color: #000 !important; }
+html[data-theme="dark"] .badge-recommended { color: #000 !important; }
 html[data-theme="dark"] .bg-gradient-to-br, 
 html[data-theme="dark"] .bg-linear-to-br { 
   background-image: linear-gradient(to bottom right, var(--bg-start), var(--bg-end)); 

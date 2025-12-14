@@ -87,7 +87,7 @@ export default function PricingPage() {
         {/* Pricing Cards */}
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Basic Plan */}
-          <div className="bg-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300">
+          <div className="pricing-basic bg-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               {plans.basic.name}
             </h2>
@@ -140,7 +140,7 @@ export default function PricingPage() {
 
           {/* Premium Plan */}
           <div className="bg-[#1d1d1d] text-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 relative">
-            <span className="absolute top-6 right-6 bg-[#C7F36A] text-gray-900 px-4 py-1 rounded-full text-sm font-semibold">
+            <span className="badge-recommended absolute top-6 right-6 bg-[#C7F36A] text-gray-900 px-4 py-1 rounded-full text-sm font-semibold">
               Recommended
             </span>
 
