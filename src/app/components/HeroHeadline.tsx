@@ -11,6 +11,17 @@ import {
 } from "lucide-react";
 
 export function HeroHeadline() {
+  const getUrl = (label: string) => {
+    switch (label) {
+      case "Convert Papers to Podcasts":
+        return "https://www.intellirite.com/podcast";
+      case "PDF Summarizing":
+        return "https://www.intellirite.com/pdf-summarise";
+      default:
+        return "https://workspace.intellirite.com/";
+    }
+  };
+
   return (
     <div className="max-w-[1100px] mx-auto text-center">
       <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-bold text-gray-900 leading-[1.1] tracking-tight mb-8">
@@ -47,7 +58,7 @@ export function HeroHeadline() {
                 aria-label={label}
                 title={label}
                 onClick={() => {
-                  window.location.href = "https://workspace.intellirite.com/";
+                  window.location.href = getUrl(label);
                 }}
                 className="group relative w-14 h-14 rounded-full bg-white/40 backdrop-blur-md shadow-lg ring-1 ring-white/30 flex items-center justify-center transition-all duration-300 hover:scale-105"
                 style={{ boxShadow: "0 8px 24px rgba(0,0,0,0.12)" }}
@@ -105,7 +116,7 @@ export function HeroHeadline() {
                 aria-label={label}
                 title={label}
                 onClick={() => {
-                  window.location.href = "https://workspace.intellirite.com/";
+                  window.location.href = getUrl(label);
                 }}
                 className="group relative w-12 h-12 rounded-full bg-white/40 backdrop-blur-md shadow-lg ring-1 ring-white/30 flex items-center justify-center transition-all duration-300 hover:scale-105"
                 style={{ boxShadow: "0 8px 24px rgba(0,0,0,0.12)" }}
