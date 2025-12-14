@@ -17,11 +17,12 @@ export default function HomePage() {
     <>
       <Hero />
       <DashboardLayout/>
-      <HowItWorks/>
+       <FortifyFeaturePage/>
       <SecurityFeaturesPage/>
       <FortifyFeaturesPage/>
-      <FortifyFeaturePage/>
       <PricingPage/>
+       <HowItWorks/>
+  
       <HeroCard/>
       <FortifyFooter/>
     </>

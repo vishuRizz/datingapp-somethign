@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function PricingPage() {
-  const [isYearly, setIsYearly] = useState(false);
+  const [isMonthly, setIsMonthly] = useState(false);
 
   const plans = {
     basic: {
@@ -19,11 +19,11 @@ export default function PricingPage() {
       ],
     },
     premium: {
-      name: "Pro Plan",
+      name: "Research Paper Pricing",
       description:
-        "Ideal for researchers, PhD students, and serious writers who need unlimited AI assistance and advanced features.",
+        "Designed for researchers and students. Choose monthly access or pay per paper.",
       monthly: 12,
-      yearly: 120,
+      perPaper: 4,
       recommended: true,
       features: [
         "Unlimited AI queries",
@@ -59,28 +59,28 @@ export default function PricingPage() {
         <div className="flex items-center justify-center gap-4 mb-16">
           <span
             className={`text-lg font-medium transition-colors ${
-              !isYearly ? "text-gray-900" : "text-gray-500"
+              !isMonthly ? "text-gray-900" : "text-gray-500"
             }`}
           >
-            Month
+            Per Paper
           </span>
           <button
-            onClick={() => setIsYearly(!isYearly)}
+            onClick={() => setIsMonthly(!isMonthly)}
             className="relative w-16 h-8 bg-gray-300 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-[#4CAF50] focus:ring-offset-2"
             aria-label="Toggle pricing plan"
           >
             <span
               className={`absolute top-1 left-1 w-6 h-6 bg-[#4CAF50] rounded-full transition-transform duration-300 ease-in-out ${
-                isYearly ? "translate-x-8" : "translate-x-0"
+                isMonthly ? "translate-x-8" : "translate-x-0"
               }`}
             />
           </button>
           <span
             className={`text-lg font-medium transition-colors ${
-              isYearly ? "text-gray-900" : "text-gray-500"
+              isMonthly ? "text-gray-900" : "text-gray-500"
             }`}
           >
-            Yearly
+            Monthly
           </span>
         </div>
 
@@ -97,11 +97,8 @@ export default function PricingPage() {
 
             <div className="mb-8">
               <span className="text-6xl font-bold text-gray-900">
-                ${isYearly ? plans.basic.yearly : plans.basic.monthly}
+                ${plans.basic.monthly}
               </span>
-              {plans.basic.monthly > 0 && (
-                <span className="text-gray-600 ml-2">per month</span>
-              )}
             </div>
 
             <ul className="space-y-4 mb-8">
@@ -154,9 +151,11 @@ export default function PricingPage() {
 
             <div className="mb-8">
               <span className="text-6xl font-bold">
-                ${isYearly ? plans.premium.yearly : plans.premium.monthly}
+                ${isMonthly ? plans.premium.monthly : plans.premium.perPaper}
               </span>
-              <span className="text-gray-400 ml-2">per month</span>
+              <span className="text-gray-400 ml-2">
+                {isMonthly ? "per month" : "per research paper"}
+              </span>
             </div>
 
             <ul className="space-y-4 mb-8">
