@@ -207,8 +207,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
-        <div className="pointer-events-none fixed inset-y-0 left-0 w-24 sm:w-32 z-[0] [background:radial-gradient(140px_60%_at_0%_50%,rgba(124,255,0,0.12)_0%,rgba(124,255,0,0.06)_35%,rgba(124,255,0,0)_70%)]" />
-        <div className="pointer-events-none fixed inset-y-0 right-0 w-24 sm:w-32 z-[0] [background:radial-gradient(140px_60%_at_100%_50%,rgba(124,255,0,0.12)_0%,rgba(124,255,0,0.06)_35%,rgba(124,255,0,0)_70%)]" />
         <SmoothScroll />
         {children}
       </body>
