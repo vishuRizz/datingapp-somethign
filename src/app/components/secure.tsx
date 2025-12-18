@@ -11,7 +11,7 @@ export default function SecurityFeatures() {
             The Writing IDE That<br />Understands Your Entire Project
           </h1>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-            Unlike ChatGPT (no file awareness) or Google Docs (no project structure), Intellirite combines multi-file IDE workspace with semantic indexing and AI context awareness.
+            Unlike ChatGPT (no file awareness) or Google Docs (no project structure), Pensyl combines multi-file IDE workspace with semantic indexing and AI context awareness.
           </p>
         </div>
       </div>

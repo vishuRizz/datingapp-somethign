@@ -16,7 +16,7 @@ export default function FortifyFeaturesPage() {
       <div className="max-w-7xl mx-auto text-center mb-20">
         <p className="text-green-600 text-sm font-medium mb-4">Essential Features</p>
         <h1 className="text-6xl font-bold mb-6 text-black">
-          Discover the Features That<br />Make Intellirite Stand Out
+          Discover the Features That<br />Make Pensyl Stand Out
         </h1>
         <p className="text-gray-600 text-lg">
           The first real Writing IDE with whole-project AI context, built-in citations,<br />

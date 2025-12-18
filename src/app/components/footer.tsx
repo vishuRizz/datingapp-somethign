@@ -21,7 +21,7 @@ const FortifyFooter = () => {
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <span className="text-2xl font-bold text-gray-900">Intellirite</span>
+              <span className="text-2xl font-bold text-gray-900">Pensyl</span>
             </div>
             <p className="text-gray-600 text-sm leading-relaxed mb-8">
               The AI-Powered Writing IDE for Students, Researchers, and Serious Writers. Write with Intelligence.
@@ -93,7 +93,7 @@ const FortifyFooter = () => {
           </div>
           
           <div className="mt-8 text-center text-gray-600 text-sm">
-            Copyright © 2025 Intellirite
+            Copyright © 2025 Pensyl
           </div>
         </div>
       </div>

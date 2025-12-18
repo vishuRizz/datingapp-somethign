@@ -16,12 +16,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://intellirite.com"),
+  metadataBase: new URL("https://pensyl.com"),
   title: {
-    default: "Intellirite - AI-Powered Writing IDE for Students, Researchers & Writers",
-    template: "%s | Intellirite",
+    default: "Pensyl - AI-Powered Writing IDE for Students, Researchers & Writers",
+    template: "%s | Pensyl",
   },
-  description: "Intellirite is the AI-first writing environment for serious writers. Like Cursor for coding, but for writing. Multi-file workspace, whole-project AI context, built-in citations, plagiarism-free AI writing, and Turnitin-compliant papers. Perfect for research papers, theses, books, and academic writing.",
+  description: "Pensyl is the AI-first writing environment for serious writers. Like Cursor for coding, but for writing. Multi-file workspace, whole-project AI context, built-in citations, plagiarism-free AI writing, and Turnitin-compliant papers. Perfect for research papers, theses, books, and academic writing.",
   keywords: [
     "AI writing tool",
     "writing IDE",
@@ -49,9 +49,9 @@ export const metadata: Metadata = {
     "thesis management",
     "research collaboration tool",
   ],
-  authors: [{ name: "Intellirite Team" }],
-  creator: "Intellirite",
-  publisher: "Intellirite",
+  authors: [{ name: "Pensyl Team" }],
+  creator: "Pensyl",
+  publisher: "Pensyl",
   formatDetection: {
     email: false,
     address: false,
@@ -60,26 +60,26 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://intellirite.com",
-    siteName: "Intellirite",
-    title: "Intellirite - AI-Powered Writing IDE for Students, Researchers & Writers",
+    url: "https://pensyl.com",
+    siteName: "Pensyl",
+    title: "Pensyl - AI-Powered Writing IDE for Students, Researchers & Writers",
     description: "The AI-first writing environment for serious writers. Multi-file workspace, whole-project AI context, built-in citations, and plagiarism-free AI writing. Perfect for research papers, theses, and academic writing.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Intellirite - AI-Powered Writing IDE",
+        alt: "Pensyl - AI-Powered Writing IDE",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Intellirite - AI-Powered Writing IDE for Students & Researchers",
+    title: "Pensyl - AI-Powered Writing IDE for Students & Researchers",
     description: "The AI-first writing environment for serious writers. Multi-file workspace, whole-project AI context, and plagiarism-free AI writing.",
     images: ["/twitter-image.png"],
-    creator: "@intellirite",
-    site: "@intellirite",
+    creator: "@pensyl",
+    site: "@pensyl",
   },
   robots: {
     index: true,
@@ -93,15 +93,15 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://intellirite.com",
+    canonical: "https://pensyl.com",
   },
   category: "Education Technology",
   classification: "Writing Software",
   other: {
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black-translucent",
-    "apple-mobile-web-app-title": "Intellirite",
-    "application-name": "Intellirite",
+    "apple-mobile-web-app-title": "Pensyl",
+    "application-name": "Pensyl",
     "mobile-web-app-capable": "yes",
     "msapplication-TileColor": "#4CAF50",
     "format-detection": "telephone=no",
@@ -126,7 +126,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "Intellirite",
+    title: "Pensyl",
   },
 };
 
@@ -145,7 +145,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Intellirite",
+    "name": "Pensyl",
     "applicationCategory": "EducationalApplication",
     "operatingSystem": "Web",
     "offers": {
@@ -170,27 +170,27 @@ export default function RootLayout({
       "Convert Papers to Podcasts",
       "PDF Summarizing",
     ],
-    "screenshot": "https://intellirite.com/screenshot.png",
+    "screenshot": "https://pensyl.com/screenshot.png",
     "softwareVersion": "1.0",
-    "releaseNotes": "Initial release of Intellirite - The AI Writing IDE",
+    "releaseNotes": "Initial release of Pensyl - The AI Writing IDE",
   };
 
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Intellirite",
-    "url": "https://intellirite.com",
-    "logo": "https://intellirite.com/logo.png",
+    "name": "Pensyl",
+    "url": "https://pensyl.com",
+    "logo": "https://pensyl.com/logo.png",
     "description": "AI-powered writing IDE for academic and professional writing",
     "sameAs": [
-      "https://twitter.com/intellirite",
-      "https://linkedin.com/company/intellirite",
-      "https://github.com/intellirite",
+      "https://twitter.com/pensyl",
+      "https://linkedin.com/company/pensyl",
+      "https://github.com/pensyl",
     ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Support",
-      "email": "support@intellirite.com",
+      "email": "pensyl.work@gmail.com",
     },
   };
 

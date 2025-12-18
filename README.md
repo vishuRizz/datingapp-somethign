@@ -1,6 +1,6 @@
-# Intellirite Web - OAuth Handler
+# Pensyl Web - OAuth Handler
 
-Simple Next.js web app that handles Google OAuth for the Intellirite Electron app.
+Simple Next.js web app that handles Google OAuth for the Pensyl Electron app.
 
 ## Setup
 

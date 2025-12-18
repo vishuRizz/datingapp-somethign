@@ -61,7 +61,7 @@ const HeroCard = () => {
 
             {/* Subtext */}
             <p className="text-gray-300 text-sm md:text-base max-w-xl mb-6 leading-relaxed">
-              Join students, researchers, and serious writers who are using Intellirite to write better, faster, and with full project context.
+              Join students, researchers, and serious writers who are using Pensyl to write better, faster, and with full project context.
             </p>
 
             {/* CTA Button */}

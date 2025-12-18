@@ -1,6 +1,6 @@
 {
-  "name": "Intellirite - AI-Powered Writing IDE",
-  "short_name": "Intellirite",
+  "name": "Pensyl - AI-Powered Writing IDE",
+  "short_name": "Pensyl",
   "description": "AI-first writing environment for students, researchers, and serious writers. Multi-file workspace with whole-project AI context.",
   "start_url": "/",
   "display": "standalone",

@@ -1,14 +1,14 @@
 ## **1. Startup Name**
 
-### **Intellirite**
+### **Pensyl**
 
-*The AI-Powered Writing IDE for Students, Researchers, and Serious Writers.*
+_The AI-Powered Writing IDE for Students, Researchers, and Serious Writers._
 
 ---
 
 ## **2. One-Line Description**
 
-Intellirite is an **AI-first writing environment** — like Cursor, but for writing instead of coding — designed for long-form projects, research papers, citations, and structured academic workflows.
+Pensyl is an **AI-first writing environment** — like Cursor, but for writing instead of coding — designed for long-form projects, research papers, citations, and structured academic workflows.
 
 ---
 
@@ -22,8 +22,8 @@ Students and researchers struggle with:
 - References in another
 - Drafting in Google Docs
 - Citations in Zotero
-- AI help only on *single pages*
-- No tool that understands the *whole project*
+- AI help only on _single pages_
+- No tool that understands the _whole project_
 - No multi-file workflow
 - No AI that can handle multiple documents at once
 - Manual formatting for research papers
@@ -32,7 +32,7 @@ This creates friction, confusion, and massive time loss.
 
 ---
 
-## **4. The Solution: Intellirite**
+## **4. The Solution: Pensyl**
 
 A **Writing IDE** that merges:
 
@@ -41,9 +41,7 @@ A **Writing IDE** that merges:
 - Zotero’s citation power
 - Scrivener’s multi-file writing
 - Notion’s organization
-    
-    Into one unified environment.
-    
+  Into one unified environment.
 
 ### 🚀 **Key Features**
 
@@ -72,10 +70,8 @@ Meaning it can:
 Ask:
 
 > “Create a literature review from #paper1.pdf and #notes.md”
-> 
 
 > “Fix grammar in #chapter2.md and update references.”
-> 
 
 ### **✔ Smart file referencing**
 
@@ -146,7 +142,7 @@ A massive industry with no “AI writing IDE” category yet.
 - EdTech market: **$404B**
 - Writing tools market: **$60B+**
 
-There is **no direct competitor** that combines AI, citations, multi-file writing, and research workflows like Intellirite.
+There is **no direct competitor** that combines AI, citations, multi-file writing, and research workflows like Pensyl.
 
 ---
 
@@ -189,7 +185,7 @@ This is where you could scale fast.
 
 To become the **standard writing environment** for students and researchers worldwide.
 
-If Cursor became the AI IDE for coding, **Intellirite becomes the AI IDE for writing.**
+If Cursor became the AI IDE for coding, **Pensyl becomes the AI IDE for writing.**
 
 ---
 
@@ -199,7 +195,6 @@ If Cursor became the AI IDE for coding, **Intellirite becomes the AI IDE for wri
 - **“The AI IDE for Writing.”**
 - **“Where research meets clarity.”**
 - **“Your AI writing partner.”**
-
 
 # **Architectural Innovation**
 
@@ -219,8 +214,6 @@ Cursor IDE (for code development) solves this via:
 - **Intelligent context injection**: When user asks question, most relevant files automatically injected into LLM context
 - **Privacy-first architecture**: File chunks processed client-side before sending to server; path obfuscation protects sensitive information
 
-
-
 ## Cursor for Writers: The AI-Native Workspace for Academic & Professional Writing
 
 ---
@@ -232,13 +225,13 @@ Cursor IDE (for code development) solves this via:
 **Current Reality:**
 
 - Students and researchers juggle **5-7 disconnected tools** to complete a single writing project
-    - Primary editor: Google Docs / Word / Scrivener
-    - Citations: Zotero / Mendeley
-    - Research organization: Notion / OneNote
-    - AI assistance: ChatGPT / Claude
-    - PDF annotation: Adobe / Lumin
-    - Grammar polish: Grammarly / Quillbot
-    - Plagiarism detection: Turnitin
+  - Primary editor: Google Docs / Word / Scrivener
+  - Citations: Zotero / Mendeley
+  - Research organization: Notion / OneNote
+  - AI assistance: ChatGPT / Claude
+  - PDF annotation: Adobe / Lumin
+  - Grammar polish: Grammarly / Quillbot
+  - Plagiarism detection: Turnitin
 
 **The Pain Points:**
 
@@ -276,41 +269,41 @@ A file-based, AI-native writing IDE (Integrated Development Environment) designe
 **Core Architecture:**
 
 - **Multi-File Writing Workspace** (like VS Code, but for writing)
-    - Tabs and folders for project organization
-    - Side-by-side editing of multiple documents
-    - Project tree view with drag-and-drop organization
+  - Tabs and folders for project organization
+  - Side-by-side editing of multiple documents
+  - Project tree view with drag-and-drop organization
 - **Full-Project AI Context Awareness** (the secret sauce)
-    - Semantic indexing of entire project (all files, PDFs, research notes)
-    - AI can reference ANY file via #filename syntax
-    - Dynamic context injection: When you ask a question, system automatically pulls relevant sections
-    - Maintain semantic understanding across 100K+ word projects
-    - AI never loses sight of your research context
+  - Semantic indexing of entire project (all files, PDFs, research notes)
+  - AI can reference ANY file via #filename syntax
+  - Dynamic context injection: When you ask a question, system automatically pulls relevant sections
+  - Maintain semantic understanding across 100K+ word projects
+  - AI never loses sight of your research context
 - **AI Chatbot Sidebar with Document Editing**
-    - Chat with your project; ask questions about your research
-    - AI rewrites entire sections with project awareness
-    - Suggests improvements across multiple documents
-    - Maintains citation context throughout
+  - Chat with your project; ask questions about your research
+  - AI rewrites entire sections with project awareness
+  - Suggests improvements across multiple documents
+  - Maintains citation context throughout
 - **Academic Tools Built-In**
-    - Native APA/MLA/Chicago citation formatting
-    - Auto-bibliography generation from project citations
-    - Plagiarism detection (Turnitin API integration)
-    - LaTeX export for academic journals
-    - Research organization (PDFs, notes, source materials)
+  - Native APA/MLA/Chicago citation formatting
+  - Auto-bibliography generation from project citations
+  - Plagiarism detection (Turnitin API integration)
+  - LaTeX export for academic journals
+  - Research organization (PDFs, notes, source materials)
 - **Research Integration**
-    - PDF extraction and AI summarization
-    - Highlight → annotation → auto-citation workflow
-    - Research materials stored in project workspace
-    - References automatically linked to citations in text
+  - PDF extraction and AI summarization
+  - Highlight → annotation → auto-citation workflow
+  - Research materials stored in project workspace
+  - References automatically linked to citations in text
 - **Seamless Collaboration**
-    - Real-time co-editing (Google Docs-like)
-    - Comments and suggestion threads
-    - Version history and rollback
-    - Institutional sharing controls
+  - Real-time co-editing (Google Docs-like)
+  - Comments and suggestion threads
+  - Version history and rollback
+  - Institutional sharing controls
 - **Export for Any Format**
-    - PDF (publication-ready)
-    - DOCX (Word-compatible)
-    - LaTeX (academic journals)
-    - Markdown (portable)
+  - PDF (publication-ready)
+  - DOCX (Word-compatible)
+  - LaTeX (academic journals)
+  - Markdown (portable)
 
 **Why This Wins:**
 
@@ -332,13 +325,13 @@ This isn't a writing tool with AI bolted on. It's **AI-first architecture** bu
 
 **Total Addressable Market (TAM):**
 
-| **Segment** | **Size** | **TAM** |
-| --- | --- | --- |
-| Global Higher Ed Students (260M @ 80% AI adoption) | $10.4-16.6B | $10.4B |
-| Academic Researchers (17M @ 75% adoption) | $1.9-3.2B | $2.5B |
-| Professional Writers (80M @ 60% adoption) | $4.6-7.7B | $6B |
-| Enterprise Knowledge Workers (500M @ 40%) | $28.8-43.2B | $36B |
-| **TOTAL TAM** |  | **$45.7-70.7B** |
+| **Segment**                                        | **Size**    | **TAM**         |
+| -------------------------------------------------- | ----------- | --------------- |
+| Global Higher Ed Students (260M @ 80% AI adoption) | $10.4-16.6B | $10.4B          |
+| Academic Researchers (17M @ 75% adoption)          | $1.9-3.2B   | $2.5B           |
+| Professional Writers (80M @ 60% adoption)          | $4.6-7.7B   | $6B             |
+| Enterprise Knowledge Workers (500M @ 40%)          | $28.8-43.2B | $36B            |
+| **TOTAL TAM**                                      |             | **$45.7-70.7B** |
 
 **Serviceable Addressable Market (SAM):** $833M
 
@@ -373,11 +366,11 @@ This is a **blue ocean opportunity**: Create and own the "Writing IDE" category
 - **Cursor's Success in Code**: Cursor IDE achieved 50K+ users and $25M revenue in 2 years by implementing semantic indexing of codebases
 - **Writing IDE Analog**: Semantic indexing of research projects, dissertations, multi-chapter books
 - **Why Others Can't Replicate:**
-    - ChatGPT is stateless; rebuilding context management requires different infrastructure
-    - Grammarly's moat is grammar detection, not file systems; pivoting would fracture product
-    - Notion's architecture optimizes flexibility, not semantic file understanding
-    - Scrivener is pre-AI era; would require complete rebuild
-    - Building IDE-style multi-file interfaces requires abandoning existing products
+  - ChatGPT is stateless; rebuilding context management requires different infrastructure
+  - Grammarly's moat is grammar detection, not file systems; pivoting would fracture product
+  - Notion's architecture optimizes flexibility, not semantic file understanding
+  - Scrivener is pre-AI era; would require complete rebuild
+  - Building IDE-style multi-file interfaces requires abandoning existing products
 
 **2. Writing-Specialized AI (Not Generalist LLMs)**
 
@@ -420,14 +413,14 @@ This is a **blue ocean opportunity**: Create and own the "Writing IDE" category
 
 **Revenue Tiers & Unit Economics:**
 
-| **Segment** | **Price** | **Target Users/Instns** | **Year 3 Revenue** |
-| --- | --- | --- | --- |
-| **Consumer: Free** | $0 | 500K users | $0 (conversion funnel) |
-| **Consumer: Pro** | $12/mo | 100K users | $14.4M |
-| **Consumer: Premium** | $25/mo | 30K users | $9M |
-| **Institutional** | $2K-5K/yr | 500 institutions | $2.25M |
-| **Enterprise** | $10K-50K/yr | 50 companies | $1.5M |
-| **Total Year 3 Revenue** |  |  | **$27.15M** |
+| **Segment**              | **Price**   | **Target Users/Instns** | **Year 3 Revenue**     |
+| ------------------------ | ----------- | ----------------------- | ---------------------- |
+| **Consumer: Free**       | $0          | 500K users              | $0 (conversion funnel) |
+| **Consumer: Pro**        | $12/mo      | 100K users              | $14.4M                 |
+| **Consumer: Premium**    | $25/mo      | 30K users               | $9M                    |
+| **Institutional**        | $2K-5K/yr   | 500 institutions        | $2.25M                 |
+| **Enterprise**           | $10K-50K/yr | 50 companies            | $1.5M                  |
+| **Total Year 3 Revenue** |             |                         | **$27.15M**            |
 
 **Gross Margin Profile:**
 
@@ -459,71 +452,71 @@ This is a **blue ocean opportunity**: Create and own the "Writing IDE" category
 
 **PHASE 1: Early Adopter Launch (Months 1-6)**
 
-*Goal: Product-Market Fit with Core Users*
+_Goal: Product-Market Fit with Core Users_
 
 - **Target**: PhD students, academic researchers, published authors
 - **Channels**:
-    - ProductHunt launch (60K+ tech-savvy audience)
-    - Twitter/X academic community (@academictwitter, research threads)
-    - Reddit: r/academia, r/writing, r/research
-    - Academic conferences (present at 3-5 major conferences)
-    - Founder storytelling (blog posts, podcast appearances)
+  - ProductHunt launch (60K+ tech-savvy audience)
+  - Twitter/X academic community (@academictwitter, research threads)
+  - Reddit: r/academia, r/writing, r/research
+  - Academic conferences (present at 3-5 major conferences)
+  - Founder storytelling (blog posts, podcast appearances)
 - **Positioning**: "Cursor for Writers" or "The Writing IDE"
 - **Freemium Model**:
-    - Free tier (no credit card required): Basic editor, 10 AI queries/day, 1 project
-    - Pro tier: $15/month ($180/year): Unlimited projects, unlimited queries, collaboration
-    - Lifetime discount for early users: $99 lifetime (create urgency)
+  - Free tier (no credit card required): Basic editor, 10 AI queries/day, 1 project
+  - Pro tier: $15/month ($180/year): Unlimited projects, unlimited queries, collaboration
+  - Lifetime discount for early users: $99 lifetime (create urgency)
 - **Incentives**:
-    - Beta access to Premium features
-    - Featured in "powered by" community page
-    - Ambassador program (free lifetime access for content creators)
+  - Beta access to Premium features
+  - Featured in "powered by" community page
+  - Ambassador program (free lifetime access for content creators)
 - **Success Metrics**: 10K MAU, 30% Pro conversion rate, 4.5+ star rating
 
 ---
 
 **PHASE 2: Mainstream Academic Expansion (Months 6-18)**
 
-*Goal: Institutional Pilot Partnerships*
+_Goal: Institutional Pilot Partnerships_
 
 - **Target**: Undergraduates, master's students, university departments
 - **Channels**:
-    - University partnerships: Pilot 5-10 flagship institutions (MIT, Stanford, Oxford, Cambridge, UC Berkeley)
-    - Student influencer program: Graduate students and TAs promote to peers
-    - Institutional integrations: LMS plugins (Canvas, Blackboard, Moodle)
-    - Faculty champions: Partner with 2-3 prominent research groups per institution
+  - University partnerships: Pilot 5-10 flagship institutions (MIT, Stanford, Oxford, Cambridge, UC Berkeley)
+  - Student influencer program: Graduate students and TAs promote to peers
+  - Institutional integrations: LMS plugins (Canvas, Blackboard, Moodle)
+  - Faculty champions: Partner with 2-3 prominent research groups per institution
 - **Institutional Pricing Model**:
-    - $2-5 per student per year (bundled into tech fee or department budget)
-    - E.g., 40,000-student institution = $80K-200K/year
-    - Includes: SSO, plagiarism detection, admin dashboards, audit logs
-    - Site license = unlimited usage across campus
+  - $2-5 per student per year (bundled into tech fee or department budget)
+  - E.g., 40,000-student institution = $80K-200K/year
+  - Includes: SSO, plagiarism detection, admin dashboards, audit logs
+  - Site license = unlimited usage across campus
 - **Product Readiness**:
-    - Turnitin API integration (plagiarism detection)
-    - FERPA compliance certification
-    - SOC 2 Type II security certification
-    - LMS API integrations
+  - Turnitin API integration (plagiarism detection)
+  - FERPA compliance certification
+  - SOC 2 Type II security certification
+  - LMS API integrations
 - **Success Metrics**: 100K MAU, 50 institutional pilots, $2-3M ARR
 
 ---
 
 **PHASE 3: Enterprise & Professional Expansion (Months 18-36)**
 
-*Goal: Diversified Revenue Streams*
+_Goal: Diversified Revenue Streams_
 
 - **Target**: Law firms, consulting companies, publishing houses, content agencies
 - **Channels**:
-    - Enterprise B2B sales team (hire VP Sales)
-    - Industry partnerships (Thomson Reuters for legal research, McKinsey for consulting)
-    - Trade shows and industry conferences
-    - Direct outbound to 500+ target companies
+  - Enterprise B2B sales team (hire VP Sales)
+  - Industry partnerships (Thomson Reuters for legal research, McKinsey for consulting)
+  - Trade shows and industry conferences
+  - Direct outbound to 500+ target companies
 - **Enterprise Features**:
-    - Advanced team collaboration and permission management
-    - Custom integrations (Salesforce, Slack, Teams)
-    - White-label options (for publishing platforms)
-    - Premium security (data residency, advanced encryption)
+  - Advanced team collaboration and permission management
+  - Custom integrations (Salesforce, Slack, Teams)
+  - White-label options (for publishing platforms)
+  - Premium security (data residency, advanced encryption)
 - **Enterprise Pricing**:
-    - $10K-50K/year depending on team size and feature set
-    - Typical deal: Law firm (150 attorneys) = $30K/year
-    - Consulting firm (200 analysts) = $25K/year
+  - $10K-50K/year depending on team size and feature set
+  - Typical deal: Law firm (150 attorneys) = $30K/year
+  - Consulting firm (200 analysts) = $25K/year
 - **Success Metrics**: 500K MAU, 200 institutional licenses, 50 enterprise contracts, $60-100M ARR (Year 4-5)
 
 ---
@@ -534,54 +527,54 @@ This is a **blue ocean opportunity**: Create and own the "Writing IDE" category
 
 **Year 1 Financials (Freemium + Early Institutional)**
 
-| **Metric** | **Amount** |
-| --- | --- |
-| Monthly Recurring Revenue (End of Year) | $200K |
-| Annual Recurring Revenue (End of Year) | $2.4M |
-| Users (MAU) | 50K |
-| Paying Users (5% conversion) | 2.5K |
-| ARPU (Avg Revenue Per User) | $80/year |
-| CAC (Customer Acquisition Cost) | $5 (organic-heavy early stage) |
-| LTV (Lifetime Value, 3-year horizon) | $180 |
-| LTV:CAC Ratio | 36:1 (excellent) |
-| Total Operating Costs | $1.8M (lean 12-person team) |
-| Gross Margin | 60% (lower due to free tier) |
-| **Operating Loss** | **-$720K** |
+| **Metric**                              | **Amount**                     |
+| --------------------------------------- | ------------------------------ |
+| Monthly Recurring Revenue (End of Year) | $200K                          |
+| Annual Recurring Revenue (End of Year)  | $2.4M                          |
+| Users (MAU)                             | 50K                            |
+| Paying Users (5% conversion)            | 2.5K                           |
+| ARPU (Avg Revenue Per User)             | $80/year                       |
+| CAC (Customer Acquisition Cost)         | $5 (organic-heavy early stage) |
+| LTV (Lifetime Value, 3-year horizon)    | $180                           |
+| LTV:CAC Ratio                           | 36:1 (excellent)               |
+| Total Operating Costs                   | $1.8M (lean 12-person team)    |
+| Gross Margin                            | 60% (lower due to free tier)   |
+| **Operating Loss**                      | **-$720K**                     |
 
 **Year 2 Financials (Institutional Growth)**
 
-| **Metric** | **Amount** |
-| --- | --- |
-| MRR (End of Year) | $750K |
-| ARR (End of Year) | $9M |
-| Users (MAU) | 150K |
-| Institutions | 50 |
-| Institutional Revenue | $3M (50 × avg $60K) |
-| Consumer Revenue | $6M (100K users @ $72/year) |
-| ARPU | $120/year (mix shift) |
-| CAC | $8 (increased marketing spend) |
-| LTV | $240 |
-| Operating Costs | $4.2M (30-person team + marketing) |
-| Gross Margin | 65% (free tier < 40% of base) |
-| **Operating Margin** | **-18%** |
+| **Metric**            | **Amount**                         |
+| --------------------- | ---------------------------------- |
+| MRR (End of Year)     | $750K                              |
+| ARR (End of Year)     | $9M                                |
+| Users (MAU)           | 150K                               |
+| Institutions          | 50                                 |
+| Institutional Revenue | $3M (50 × avg $60K)                |
+| Consumer Revenue      | $6M (100K users @ $72/year)        |
+| ARPU                  | $120/year (mix shift)              |
+| CAC                   | $8 (increased marketing spend)     |
+| LTV                   | $240                               |
+| Operating Costs       | $4.2M (30-person team + marketing) |
+| Gross Margin          | 65% (free tier < 40% of base)      |
+| **Operating Margin**  | **-18%**                           |
 
 **Year 3 Financials (Mainstream Adoption)**
 
-| **Metric** | **Amount** |
-| --- | --- |
-| MRR (End of Year) | $1.8M |
-| ARR (End of Year) | $21.6M |
-| Users (MAU) | 400K |
-| Institutions | 200 |
-| Institutional Revenue | $8M (200 × avg $40K) |
-| Consumer Revenue | $10M (200K users @ $60/year) |
-| Enterprise Revenue | $3.6M (36 accounts @ $100K avg) |
-| ARPU | $95/year (diversified mix) |
-| CAC | $12 (scaled marketing) |
-| LTV | $270 |
-| Operating Costs | $10.8M (60-person team) |
-| Gross Margin | 68% |
-| **Operating Margin** | **+5%** (break-even approach) |
+| **Metric**            | **Amount**                      |
+| --------------------- | ------------------------------- |
+| MRR (End of Year)     | $1.8M                           |
+| ARR (End of Year)     | $21.6M                          |
+| Users (MAU)           | 400K                            |
+| Institutions          | 200                             |
+| Institutional Revenue | $8M (200 × avg $40K)            |
+| Consumer Revenue      | $10M (200K users @ $60/year)    |
+| Enterprise Revenue    | $3.6M (36 accounts @ $100K avg) |
+| ARPU                  | $95/year (diversified mix)      |
+| CAC                   | $12 (scaled marketing)          |
+| LTV                   | $270                            |
+| Operating Costs       | $10.8M (60-person team)         |
+| Gross Margin          | 68%                             |
+| **Operating Margin**  | **+5%** (break-even approach)   |
 
 **Year 4-5 Projections**
 
@@ -597,37 +590,37 @@ This is a **blue ocean opportunity**: Create and own the "Writing IDE" category
 **Market Validation:**
 
 - 🎯 **Product-Market Fit Indicators**:
-    - PhD student survey (n=120): 87% would pay for integrated solution
-    - Academic researcher interviews (n=25): "AI tools are useless without project context"
-    - Time-saving measurement: 15 hours/week saved across multi-chapter writing projects
-    - Workflow fragmentation problem repeatedly mentioned unprompted
+  - PhD student survey (n=120): 87% would pay for integrated solution
+  - Academic researcher interviews (n=25): "AI tools are useless without project context"
+  - Time-saving measurement: 15 hours/week saved across multi-chapter writing projects
+  - Workflow fragmentation problem repeatedly mentioned unprompted
 - 📊 **Market Growth Evidence**:
-    - AI writing tools: $65.12B (2024) → $2,020B (2035) [36.65% CAGR]
-    - Academic writing software: $2.18B → $5B [7.8% CAGR]
-    - EdTech spending: 15.9% CAGR
-    - Student AI adoption: 66% → 92% in one year (UK)
+  - AI writing tools: $65.12B (2024) → $2,020B (2035) [36.65% CAGR]
+  - Academic writing software: $2.18B → $5B [7.8% CAGR]
+  - EdTech spending: 15.9% CAGR
+  - Student AI adoption: 66% → 92% in one year (UK)
 - 🏆 **Competitive Validation**:
-    - Cursor (code IDE equivalent): $25M revenue, 50K+ users in 2 years
-    - Grammarly: $700M ARR with single-purpose tool
-    - Turnitin: $203M revenue, 88% market share with institutional licensing
-    - Notion: $10B valuation, proof of unified workspace demand
+  - Cursor (code IDE equivalent): $25M revenue, 50K+ users in 2 years
+  - Grammarly: $700M ARR with single-purpose tool
+  - Turnitin: $203M revenue, 88% market share with institutional licensing
+  - Notion: $10B valuation, proof of unified workspace demand
 - 🔬 **Early Traction (If Available)**:
-    - Beta signup waitlist: [X users]
-    - Pilot partnerships: [X institutions]
-    - Founder speaking engagement at [Conference]
-    - Media coverage: [Publications]
+  - Beta signup waitlist: [X users]
+  - Pilot partnerships: [X institutions]
+  - Founder speaking engagement at [Conference]
+  - Media coverage: [Publications]
 
 **Why Cursor's Success Proves This Works:**
 
-| **Aspect** | **Cursor (Code)** | **Writing IDE (Proposed)** |
-| --- | --- | --- |
-| Problem | Fragmented coding tools | Fragmented writing tools |
-| Solution | Semantic codebase indexing | Semantic project indexing |
-| Users | Developers (5M globally) | Writers/Researchers (260M+ students + professionals) |
-| Market Size | $50B code editor market | $45-70B writing tools market |
-| Adoption | 50K users, $25M revenue in 2 years | 10K users, $2.4M revenue in Year 1 (conservative) |
-| Moat | Full-file context awareness | Full-project AI context awareness |
-| **Founder Experience** | ✅ AI-native product | 👥 Founding team: [Your background] |
+| **Aspect**             | **Cursor (Code)**                  | **Writing IDE (Proposed)**                           |
+| ---------------------- | ---------------------------------- | ---------------------------------------------------- |
+| Problem                | Fragmented coding tools            | Fragmented writing tools                             |
+| Solution               | Semantic codebase indexing         | Semantic project indexing                            |
+| Users                  | Developers (5M globally)           | Writers/Researchers (260M+ students + professionals) |
+| Market Size            | $50B code editor market            | $45-70B writing tools market                         |
+| Adoption               | 50K users, $25M revenue in 2 years | 10K users, $2.4M revenue in Year 1 (conservative)    |
+| Moat                   | Full-file context awareness        | Full-project AI context awareness                    |
+| **Founder Experience** | ✅ AI-native product               | 👥 Founding team: [Your background]                  |
 
 ---
 
@@ -682,26 +675,26 @@ This is a **blue ocean opportunity**: Create and own the "Writing IDE" category
 
 **Use of Funds Breakdown:**
 
-| **Category** | **Amount** | **Purpose** |
-| --- | --- | --- |
-| **Product Development** | $900K | 4 engineers, 1 ML engineer, design. Build MVP + institutional features, LLM fine-tuning, plagiarism API integration |
-| **Go-to-Market** | $600K | VP Sales, community manager, marketing spend (ProductHunt, content, conferences) |
-| **LLM & Infrastructure** | $400K | OpenAI/Anthropic API credits ($20K/mo × 12), AWS/GCP ($10K/mo × 12), vector database ($5K/mo × 12) |
-| **Operations & Legal** | $300K | CFO, legal (compliance, contracts), HR, admin |
-| **Sales & Partnerships** | $200K | BD team for institutional pilots, Turnitin/citation API partnerships |
-| **Runway Buffer** | $100K | Contingency for pivots, market changes |
-| **Total** | **$2.5M** | 18-month runway to Series A (Y1 end + 6 months Y2) |
+| **Category**             | **Amount** | **Purpose**                                                                                                         |
+| ------------------------ | ---------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Product Development**  | $900K      | 4 engineers, 1 ML engineer, design. Build MVP + institutional features, LLM fine-tuning, plagiarism API integration |
+| **Go-to-Market**         | $600K      | VP Sales, community manager, marketing spend (ProductHunt, content, conferences)                                    |
+| **LLM & Infrastructure** | $400K      | OpenAI/Anthropic API credits ($20K/mo × 12), AWS/GCP ($10K/mo × 12), vector database ($5K/mo × 12)                  |
+| **Operations & Legal**   | $300K      | CFO, legal (compliance, contracts), HR, admin                                                                       |
+| **Sales & Partnerships** | $200K      | BD team for institutional pilots, Turnitin/citation API partnerships                                                |
+| **Runway Buffer**        | $100K      | Contingency for pivots, market changes                                                                              |
+| **Total**                | **$2.5M**  | 18-month runway to Series A (Y1 end + 6 months Y2)                                                                  |
 
 **Milestones to Series A (18 months):**
 
-| **Timeline** | **Milestone** | **Evidence** |
-| --- | --- | --- |
-| Month 3 | MVP Launch | ProductHunt #1, 5K waitlist signups |
-| Month 6 | 10K MAU, $60K MRR | Organic growth, 30% conversion rate |
-| Month 9 | First 5 Institutional Pilots | MIT, Stanford, 2 others signed |
-| Month 12 | 50K MAU, $200K MRR, $2.4M ARR | Consumer profitability approaching |
-| Month 15 | 20 Institutional Customers | $1.2M institutional ARR |
-| Month 18 | 100K MAU, $9M ARR, 50 institutions | Clear path to $100M+ TAM capture |
+| **Timeline** | **Milestone**                      | **Evidence**                        |
+| ------------ | ---------------------------------- | ----------------------------------- |
+| Month 3      | MVP Launch                         | ProductHunt #1, 5K waitlist signups |
+| Month 6      | 10K MAU, $60K MRR                  | Organic growth, 30% conversion rate |
+| Month 9      | First 5 Institutional Pilots       | MIT, Stanford, 2 others signed      |
+| Month 12     | 50K MAU, $200K MRR, $2.4M ARR      | Consumer profitability approaching  |
+| Month 15     | 20 Institutional Customers         | $1.2M institutional ARR             |
+| Month 18     | 100K MAU, $9M ARR, 50 institutions | Clear path to $100M+ TAM capture    |
 
 **Series A Funding Ask: $8-10M** (18 months post-Seed)
 

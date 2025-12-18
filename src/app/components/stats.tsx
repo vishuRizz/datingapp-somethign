@@ -54,7 +54,7 @@ export default function DashboardLayout() {
               </div>
               <div className="mt-8 text-center">
                 <p className="text-gray-700 text-lg font-medium mb-4">The Solution: One Unified Writing IDE</p>
-                <p className="text-gray-600">Intellirite combines all your writing tools into one AI-powered workspace</p>
+                <p className="text-gray-600">Pensyl combines all your writing tools into one AI-powered workspace</p>
               </div>
             </div>
           </div>
