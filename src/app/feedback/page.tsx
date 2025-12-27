@@ -21,6 +21,8 @@ export default function FeedbackPage() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -33,9 +35,45 @@ export default function FeedbackPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the data to your API
-    console.log("Feedback submitted:", formData);
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setError(null);
+
+    try {
+      const response = await fetch("https://sheetdb.io/api/v1/o3kpd5a54o30i", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          data: [
+            {
+              timestamp: new Date().toISOString(),
+              overallExperience: formData.overallExperience || "",
+              mostValuableFeature: formData.mostValuableFeature || "",
+              timeSaved: formData.timeSaved || "",
+              wouldRecommend: formData.wouldRecommend || "",
+              biggestWin: formData.biggestWin || "",
+              missingFeature: formData.missingFeature || "",
+              citationExperience: formData.citationExperience || "",
+              aiWritingQuality: formData.aiWritingQuality || "",
+              workspaceExperience: formData.workspaceExperience || "",
+              comparisonTools: formData.comparisonTools || "",
+              testimonial: formData.testimonial || "",
+              email: formData.email || "",
+            },
+          ],
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit feedback. Please try again.");
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "An error occurred. Please try again.");
+      setIsSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -449,14 +487,28 @@ export default function FeedbackPage() {
               />
             </div>
 
+            {/* Error Message */}
+            {error && (
+              <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-red-700">
+                <p className="font-medium">{error}</p>
+              </div>
+            )}
+
             {/* Submit Button */}
             <div className="flex justify-center pt-4">
               <button
                 type="submit"
-                className="group inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#4CAF50] transition-all duration-300 hover:scale-105 shadow-lg"
+                disabled={isSubmitting}
+                className={`group inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg ${
+                  isSubmitting
+                    ? "opacity-50 cursor-not-allowed"
+                    : "hover:bg-[#4CAF50] hover:scale-105"
+                }`}
               >
-                <span>Send Feedback</span>
-                <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <span>{isSubmitting ? "Submitting..." : "Send Feedback"}</span>
+                {!isSubmitting && (
+                  <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                )}
               </button>
             </div>
           </form>
