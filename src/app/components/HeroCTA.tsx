@@ -14,7 +14,7 @@ export function HeroCTA() {
         {/* Circle Wrapper */}
         <div className="relative w-10 h-10 bg-[#C7F36A] rounded-full flex items-center justify-center overflow-hidden">
 
-          {/* Arrow — slides forward, fades, returns */}
+          {/* Arrow - slides forward, fades, returns */}
           <ArrowRight
             className="
               w-5 h-5 text-black absolute transition-all duration-300

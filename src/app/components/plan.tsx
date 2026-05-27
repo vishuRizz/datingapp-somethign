@@ -70,7 +70,7 @@ export default function PricingPage() {
           </h1>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
             Freemium model with 15-20% premium conversion target. Ethical
-            monetization — premium for convenience, never gatekeeping safety.
+            monetization: premium for convenience, never gatekeeping safety.
           </p>
         </div>
 

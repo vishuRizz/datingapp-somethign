@@ -109,7 +109,7 @@ export default function FortifyFeaturesPage() {
                   <Check className="w-5 h-5 text-white" />
                 </div>
                 <p className="text-gray-700">
-                  <strong>CAC: ₹100-150</strong> — Organic + referral heavy, minimal paid acquisition. Community-driven viral loops reduce cost per user.
+                  <strong>CAC: ₹100-150</strong>: Organic + referral heavy, minimal paid acquisition. Community-driven viral loops reduce cost per user.
                 </p>
               </div>
 
@@ -118,7 +118,7 @@ export default function FortifyFeaturesPage() {
                   <Check className="w-5 h-5 text-white" />
                 </div>
                 <p className="text-gray-700">
-                  <strong>LTV: ₹8,000-12,000</strong> — 12-18 month retention with ₹400-600 avg/user/month across subscriptions, events, and à la carte features.
+                  <strong>LTV: ₹8,000-12,000</strong>: 12-18 month retention with ₹400-600 avg/user/month across subscriptions, events, and à la carte features.
                 </p>
               </div>
 
@@ -127,7 +127,7 @@ export default function FortifyFeaturesPage() {
                   <Check className="w-5 h-5 text-white" />
                 </div>
                 <p className="text-gray-700">
-                  <strong>LTV:CAC = 60:1</strong> — Industry best (healthy is 3:1+, we&apos;re 20x better). Payback period: 2-3 months.
+                  <strong>LTV:CAC = 60:1</strong>: Industry best (healthy is 3:1+, we&apos;re 20x better). Payback period: 2-3 months.
                 </p>
               </div>
             </div>

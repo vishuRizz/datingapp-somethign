@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://connect-dating.app"),
   title: {
-    default: "CONNECT — The Dating App That Actually Works | Investor Pitch Deck",
+    default: "CONNECT | The Dating App That Actually Works | Investor Pitch Deck",
     template: "%s | CONNECT",
   },
   description: "CONNECT is an AI-powered dating platform that matches on emotion, not just looks. Bank-grade verification eliminates fakes, anti-ghosting reputation system promotes respect, and community-first design drives 80% retention. ₹100+ crore market by Year 3.",
@@ -51,20 +51,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://connect-dating.app",
     siteName: "CONNECT",
-    title: "CONNECT — The Dating App That Actually Works | Pitch Deck",
+    title: "CONNECT | The Dating App That Actually Works | Pitch Deck",
     description: "An AI-powered dating platform that matches on emotion, not just looks. Eliminates fakes, prevents ghosting, and actually works. ₹1,400 crore market by 2030.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "CONNECT — The Dating App That Actually Works",
+        alt: "CONNECT | The Dating App That Actually Works",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "CONNECT — AI-Powered Dating App | Pitch Deck",
+    title: "CONNECT | AI-Powered Dating App | Pitch Deck",
     description: "An AI-powered dating platform that matches on emotion, not just looks. Eliminates fakes, prevents ghosting, and actually works.",
     images: ["/twitter-image.png"],
     creator: "@connectdating",

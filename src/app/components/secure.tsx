@@ -25,7 +25,7 @@ export default function SecurityFeatures() {
               How We Stack Up<br />Against Competitors
             </h2>
             <p className="text-gray-600 mb-8">
-              CONNECT outperforms every major competitor across all key dimensions — verification quality, match accuracy, retention, and user satisfaction.
+              CONNECT outperforms every major competitor across all key dimensions: verification quality, match accuracy, retention, and user satisfaction.
             </p>
 
             {/* Comparison Chart */}
@@ -171,7 +171,7 @@ export default function SecurityFeatures() {
             ₹1,400 Crore Market<br />by 2030
           </h2>
           <p className="text-gray-600 mb-8">
-            India is the 5th fastest-growing dating app market globally. With 75M+ millennial and Gen Z potential users, rising smartphone penetration at 95%, and a unique hybrid of traditional arranged marriage + modern dating culture — the timing is perfect for a trust-first platform.
+            India is the 5th fastest-growing dating app market globally. With 75M+ millennial and Gen Z potential users, rising smartphone penetration at 95%, and a unique hybrid of traditional arranged marriage + modern dating culture, the timing is perfect for a trust-first platform.
           </p>
         </div>
 
@@ -183,7 +183,7 @@ export default function SecurityFeatures() {
                 Revenue Growth<br />Projections
               </h2>
               <p className="text-gray-600 mb-8">
-                Multiple revenue streams — premium subscriptions (70%), à la carte features (10%), community events (10%), and sponsorships (10%). LTV:CAC ratio of 60:1 (industry best). Break-even by Month 10-12.
+                Multiple revenue streams: premium subscriptions (70%), à la carte features (10%), community events (10%), and sponsorships (10%). LTV:CAC ratio of 60:1 (industry best). Break-even by Month 10-12.
               </p>
               <button className="bg-gray-900 text-white px-8 py-4 rounded-full flex items-center gap-3 hover:bg-gray-800 transition-colors">
                 View Financial Details

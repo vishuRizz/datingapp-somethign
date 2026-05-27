@@ -13,7 +13,7 @@ export default function FortifyFeaturePage() {
           That Actually Works
         </h1>
         <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-          A dating platform that solves EVERY problem users have — built on bank-grade
+          A dating platform that solves EVERY problem users have, built on bank-grade
           verification,
           <br />
           emotional AI matching, and community-driven engagement.
@@ -223,7 +223,7 @@ export default function FortifyFeaturePage() {
               <p className="text-gray-600 text-sm leading-relaxed">
                 Privacy-first location tracking shows matches who crossed your
                 path. &quot;You were both at Bandra Starbucks!&quot; Creates serendipity
-                narrative — feels like fate, not algorithm.
+                narrative, which feels like fate, not an algorithm.
               </p>
             </div>
 

@@ -27,7 +27,7 @@ export function HeroHeadline() {
       </p>
       
       <p className="text-sm text-gray-500 max-w-[600px] mx-auto mb-10">
-        68% of users ghosted • 42% overwhelmed by choices • 60% churn within 30 days — <span className="text-[#4CAF50] font-semibold">We fix all of this.</span>
+        68% of users ghosted • 42% overwhelmed by choices • 60% churn within 30 days • <span className="text-[#4CAF50] font-semibold">We fix all of this.</span>
       </p>
 
       <div className="mx-auto">

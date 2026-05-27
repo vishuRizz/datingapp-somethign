@@ -63,7 +63,7 @@ export default function DashboardLayout() {
             The Problem
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Dating Apps Are Broken —<br />Here&apos;s the Proof
+            Dating Apps Are Broken:<br />Here&apos;s the Proof
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
             Users are frustrated, churning fast, and losing trust. The ₹1,400 crore Indian dating market is ripe for disruption.
@@ -83,7 +83,7 @@ export default function DashboardLayout() {
             </div>
             <div className="text-center p-6 bg-white rounded-2xl shadow-sm">
               <div className="text-4xl font-bold text-[#4CAF50] mb-2">10.65%</div>
-              <div className="text-gray-600 text-sm">CAGR — 5th fastest-growing globally</div>
+              <div className="text-gray-600 text-sm">CAGR: 5th fastest-growing globally</div>
             </div>
           </div>
 
@@ -109,7 +109,7 @@ export default function DashboardLayout() {
           
           <div className="mt-10 text-center">
             <p className="text-gray-700 text-lg font-medium mb-2">The Solution: CONNECT</p>
-            <p className="text-gray-600">The dating app built on trust, psychology, and community — solving every problem above.</p>
+            <p className="text-gray-600">The dating app built on trust, psychology, and community, solving every problem above.</p>
           </div>
         </div>
       </div>

@@ -26,7 +26,7 @@ const FortifyFooter = () => {
               The Dating App Built for Real Connections. Stop Swiping. Start Connecting.
             </p>
             <p className="text-gray-500 text-xs leading-relaxed mb-6">
-              Built by <strong>elevenX</strong> — 100+ apps, 50M+ users, 10+ years of proven execution. Noida, India.
+              Built by <strong>elevenX</strong>: 100+ apps, 50M+ users, 10+ years of proven execution. Noida, India.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-[#4CAF50] transition-colors">
@@ -113,7 +113,7 @@ const FortifyFooter = () => {
           </div>
           
           <div className="mt-8 text-center text-gray-600 text-sm">
-            © 2026 CONNECT by elevenX • Pitch Deck — Confidential
+            © 2026 CONNECT by elevenX • Pitch Deck • Confidential
           </div>
         </div>
       </div>
