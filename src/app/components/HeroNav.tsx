@@ -48,11 +48,13 @@ export function HeroNav() {
               Pitch Deck <ChevronDown className="w-4 h-4" />
             </button>
             {open && (
-              <div className="absolute right-0 mt-3 w-48 bg-white rounded-xl shadow-xl border border-gray-200 py-2 z-50">
-                <Link href="#problem" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">The Problem</Link>
-                <Link href="#solution" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Our Solution</Link>
-                <Link href="#market" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Market</Link>
-                <Link href="#pricing" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Business Model</Link>
+              <div className="absolute right-0 top-full w-48 pt-3 z-50">
+                <div className="bg-white rounded-xl shadow-xl border border-gray-200 py-2">
+                  <Link href="#problem" onClick={() => setOpen(false)} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">The Problem</Link>
+                  <Link href="#solution" onClick={() => setOpen(false)} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Our Solution</Link>
+                  <Link href="#market" onClick={() => setOpen(false)} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Market</Link>
+                  <Link href="#pricing" onClick={() => setOpen(false)} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Business Model</Link>
+                </div>
               </div>
             )}
           </div>
