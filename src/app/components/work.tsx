@@ -1,93 +1,92 @@
 import React from "react";
 import {
-  FileText,
+  ShieldCheck,
   Brain,
-  BookOpen,
-  Shield,
-  Edit3,
-  CheckCircle,
+  Heart,
   Users,
-  Headphones,
-  FileSearch,
+  MapPin,
+  Video,
+  Zap,
+  Shield,
+  Star,
 } from "lucide-react";
 
 export default function HowItWorks() {
   const features = [
     {
-      icon: FileText,
-      title: "Multi-File Writing Workspace",
+      icon: ShieldCheck,
+      title: "Bank-Grade Verification",
       description:
-        "Open .md, .txt, .docx, .pdf, and .bib files as tabs. Organize your entire project in one unified workspace.",
-    },
-    {
-      icon: Edit3,
-      title: "Inline AI Text Editor",
-      description:
-        "AI-powered writing assistance directly in your editor. Get suggestions, rewrites, and improvements as you type.",
+        "Aadhaar-based KYC, liveness detection, photo ID verification, and cross-social media checks. 99.9% fake profiles eliminated.",
     },
     {
       icon: Brain,
-      title: "Whole-Project AI Context",
+      title: "Emotional AI Matching",
       description:
-        "AI has full access to all your chapters, notes, and research papers. Maintain context across 100K+ word projects.",
+        "Matches on attachment styles, EQ scores, values, communication style, and humor compatibility. 3x better quality than competitors.",
     },
     {
-      icon: Shield,
-      title: "AI Writing with No Plagiarism",
+      icon: Heart,
+      title: "Anti-Ghosting System",
       description:
-        "Generate original, plagiarism-free content with built-in detection. Every section checked automatically for academic integrity.",
-    },
-    {
-      icon: BookOpen,
-      title: "Built-in Citation Engine",
-      description:
-        "Native APA/MLA/Chicago formatting, auto-bibliography generation, and Zotero integration.",
-    },
-    {
-      icon: CheckCircle,
-      title: "Papers Pass Turnitin",
-      description:
-        "Our AI-generated content is designed to pass Turnitin and other plagiarism detection systems with original, cited work.",
+        "Gentle nudges for closure messages. Reputation scoring with 'Respectful Partner' badges. Ghosting reduced from 68% → 15%.",
     },
     {
       icon: Users,
-      title: "Real-Time Collaborative Workspace",
+      title: "Community-First Model",
       description:
-        "Work together seamlessly with real-time synchronization. Multiple team members can edit simultaneously with live updates.",
+        "Interest-based communities (Fitness, Books, Startups, Travel). Users interact daily before dating. 80% retention vs 30% industry avg.",
     },
     {
-      icon: Headphones,
-      title: "Convert Papers to Podcasts",
+      icon: MapPin,
+      title: "Proximity Serendipity",
       description:
-        "Transform your research papers into audio podcasts. Listen to your work on the go and share with others.",
+        "Privacy-first location tracking reveals crossed paths. Feels like fate, not algorithm. Higher conversation quality and date conversion.",
     },
     {
-      icon: FileSearch,
-      title: "PDF Summarizing",
+      icon: Video,
+      title: "Video-First Profiles",
       description:
-        "Upload PDFs and get instant AI-powered summaries. Extract key points, citations, and insights from research papers.",
+        "30-60 sec video intro required. Voice messages before text. In-app video calling. Deepfake detection eliminates 80% of catfishing.",
+    },
+    {
+      icon: Zap,
+      title: "Smart Curation",
+      description:
+        "AI curates 5-7 best matches daily with explanations. Quality over quantity. Less decision fatigue, higher conversion rates.",
+    },
+    {
+      icon: Shield,
+      title: "Women's Safety First",
+      description:
+        "In-app video dating, location sharing with contacts, one-way video preview, strict harassment reporting, and community moderation.",
+    },
+    {
+      icon: Star,
+      title: "Ethical & Transparent",
+      description:
+        "No dark patterns. Clear data usage. No manipulative notifications. Users trust the platform because we respect them.",
     },
   ];
 
   return (
-    <div className="bg-white py-12 px-4">
+    <div id="features" className="bg-white py-12 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
           <p className="text-[#4CAF50] font-medium mb-3 tracking-wide">
-            How it Works
+            All Features
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            How Pensyl Works
+            9 Features That Solve<br />Every Dating Problem
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A Writing IDE that merges Google Docs&apos; simplicity, Cursor&apos;s AI
-            intelligence, Zotero&apos;s citation power, and Scrivener&apos;s multi-file
-            writing into one unified environment.
+            A comprehensive platform that combines trust, psychology, community,
+            and technology to deliver the dating experience users actually deserve.
           </p>
         </div>
 
-        {/* Features List - No Card Style */}
+        {/* Features List */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <div key={index} className="flex items-start gap-4 py-4">

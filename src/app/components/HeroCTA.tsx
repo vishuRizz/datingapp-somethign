@@ -8,8 +8,8 @@ export function HeroCTA() {
     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 py-4">
 
       {/* Primary CTA */}
-      <Link href="/get-started" className="group btn btn-primary">
-        Get Started
+      <Link href="#contact" className="group btn btn-primary">
+        Schedule Discovery Call
 
         {/* Circle Wrapper */}
         <div className="relative w-10 h-10 bg-[#C7F36A] rounded-full flex items-center justify-center overflow-hidden">
@@ -33,8 +33,8 @@ export function HeroCTA() {
         </div>
       </Link>
 
-      <Link href="/learn-more" className="group btn btn-secondary">
-        Learn more
+      <Link href="#problem" className="group btn btn-secondary">
+        View Pitch Deck
         <div className="relative w-9 h-9 bg-white rounded-full flex items-center justify-center overflow-hidden">
           <ArrowRight
             className="w-5 h-5 text-black absolute transition-all duration-300 group-hover:translate-x-6 group-hover:opacity-0"

@@ -1,39 +1,58 @@
+"use client";
+
 import { useState } from "react";
 
 export default function PricingPage() {
-  const [isMonthly, setIsMonthly] = useState(false);
+  const [isMonthly, setIsMonthly] = useState(true);
 
   const plans = {
     basic: {
-      name: "Free Plan",
+      name: "Free Tier",
       description:
-        "Perfect for students and individual writers getting started with AI-powered writing.",
+        "For new users exploring the platform. Experience community features and curated matching.",
       monthly: 0,
       yearly: 0,
       features: [
-        "Basic writing editor",
-        "10 AI queries per day",
-        "1 project workspace",
-        "Basic citation support",
-        "Community support",
+        "3 curated matches per day",
+        "Basic messaging",
+        "Profile creation & video intro",
+        "Community access (join 2 groups)",
+        "Basic verification badge",
       ],
     },
     premium: {
-      name: "Research Paper Pricing",
+      name: "CONNECT Premium",
       description:
-        "Designed for researchers and students. Choose monthly access or pay per paper.",
-      monthly: 12,
-      perPaper: 4,
+        "For serious daters. Unlock unlimited matches, see who liked you, and get priority matching.",
+      monthly: 299,
+      yearly: 249,
       recommended: true,
       features: [
-        "Unlimited AI queries",
-        "Unlimited projects",
-        "Whole-project AI context",
-        "Advanced citation engine (APA/MLA/Chicago)",
-        "PDF extraction & summarization",
-        "Plagiarism detection",
-        "Real-time collaboration",
-        "Priority support",
+        "Unlimited curated matches",
+        "See who liked you",
+        "Priority matching algorithm",
+        "Full verification badge",
+        "Unlimited community access",
+        "Voice & video messaging",
+        "Proximity serendipity alerts",
+        "Anti-ghosting reputation view",
+      ],
+    },
+    vip: {
+      name: "CONNECT VIP",
+      description:
+        "For premium users who want concierge-level matchmaking and exclusive event access.",
+      monthly: 1299,
+      yearly: 999,
+      features: [
+        "Everything in Premium",
+        "1-on-1 human matchmaker",
+        "AI matchmaker consultation",
+        "Exclusive VIP events",
+        "Extended reach (nationwide)",
+        "Profile boost (3x/week)",
+        "Priority customer support",
+        "Early access to new features",
       ],
     },
   };
@@ -44,14 +63,14 @@ export default function PricingPage() {
         {/* Header */}
         <div className="text-center mb-12">
           <p className="text-[#4CAF50] text-sm font-medium mb-4 tracking-wide uppercase">
-            Pricing & Plan
+            Business Model
           </p>
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Choose a suitable plan
+            Three Tiers, One Goal:<br />Real Connections
           </h1>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-            Start free and upgrade when you need advanced AI features, unlimited
-            projects, and institutional tools.
+            Freemium model with 15-20% premium conversion target. Ethical
+            monetization — premium for convenience, never gatekeeping safety.
           </p>
         </div>
 
@@ -59,10 +78,10 @@ export default function PricingPage() {
         <div className="flex items-center justify-center gap-4 mb-16">
           <span
             className={`text-lg font-medium transition-colors ${
-              !isMonthly ? "text-gray-900" : "text-gray-500"
+              isMonthly ? "text-gray-900" : "text-gray-500"
             }`}
           >
-            Per Paper
+            Monthly
           </span>
           <button
             onClick={() => setIsMonthly(!isMonthly)}
@@ -71,22 +90,22 @@ export default function PricingPage() {
           >
             <span
               className={`absolute top-1 left-1 w-6 h-6 bg-[#4CAF50] rounded-full transition-transform duration-300 ease-in-out ${
-                isMonthly ? "translate-x-8" : "translate-x-0"
+                !isMonthly ? "translate-x-8" : "translate-x-0"
               }`}
             />
           </button>
           <span
             className={`text-lg font-medium transition-colors ${
-              isMonthly ? "text-gray-900" : "text-gray-500"
+              !isMonthly ? "text-gray-900" : "text-gray-500"
             }`}
           >
-            Monthly
+            Yearly <span className="text-[#4CAF50] text-sm">(Save 20%)</span>
           </span>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Basic Plan */}
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* Free Plan */}
           <div className="pricing-basic bg-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               {plans.basic.name}
@@ -97,7 +116,7 @@ export default function PricingPage() {
 
             <div className="mb-8">
               <span className="text-6xl font-bold text-gray-900">
-                ${plans.basic.monthly}
+                ₹{plans.basic.monthly}
               </span>
             </div>
 
@@ -121,7 +140,7 @@ export default function PricingPage() {
             </ul>
 
             <button className="w-full bg-gray-900 text-white py-4 px-6 rounded-full font-medium hover:bg-gray-800 transition-colors duration-300 flex items-center justify-center gap-2 group">
-              Get Started Free
+              Start Free
               <svg
                 className="w-5 h-5 group-hover:translate-x-1 transition-transform"
                 fill="none"
@@ -139,7 +158,7 @@ export default function PricingPage() {
           </div>
 
           {/* Premium Plan */}
-          <div className="bg-[#1d1d1d] text-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 relative">
+          <div className="bg-[#1d1d1d] text-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 relative scale-105">
             <span className="badge-recommended absolute top-6 right-6 bg-[#C7F36A] text-gray-900 px-4 py-1 rounded-full text-sm font-semibold">
               Recommended
             </span>
@@ -151,10 +170,10 @@ export default function PricingPage() {
 
             <div className="mb-8">
               <span className="text-6xl font-bold">
-                ${isMonthly ? plans.premium.monthly : plans.premium.perPaper}
+                ₹{isMonthly ? plans.premium.monthly : plans.premium.yearly}
               </span>
               <span className="text-gray-400 ml-2">
-                {isMonthly ? "per month" : "per research paper"}
+                /month
               </span>
             </div>
 
@@ -178,7 +197,64 @@ export default function PricingPage() {
             </ul>
 
             <button className="w-full bg-white text-gray-900 py-4 px-6 rounded-full font-medium hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center gap-2 group">
-              Upgrade to Pro
+              Get Premium
+              <svg
+                className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </button>
+          </div>
+
+          {/* VIP Plan */}
+          <div className="pricing-basic bg-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 relative">
+            <span className="absolute top-6 right-6 bg-purple-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+              VIP
+            </span>
+
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">{plans.vip.name}</h2>
+            <p className="text-gray-600 mb-8 min-h-[60px]">
+              {plans.vip.description}
+            </p>
+
+            <div className="mb-8">
+              <span className="text-6xl font-bold text-gray-900">
+                ₹{isMonthly ? plans.vip.monthly : plans.vip.yearly}
+              </span>
+              <span className="text-gray-500 ml-2">
+                /month
+              </span>
+            </div>
+
+            <ul className="space-y-4 mb-8">
+              {plans.vip.features.map((feature, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <svg
+                    className="w-6 h-6 text-[#4CAF50] flex-shrink-0 mt-0.5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="text-gray-700">{feature}</span>
+                </li>
+              ))}
+            </ul>
+
+            <button className="w-full bg-gray-900 text-white py-4 px-6 rounded-full font-medium hover:bg-gray-800 transition-colors duration-300 flex items-center justify-center gap-2 group">
+              Go VIP
               <svg
                 className="w-5 h-5 group-hover:translate-x-1 transition-transform"
                 fill="none"

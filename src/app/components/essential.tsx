@@ -1,26 +1,26 @@
 import React from 'react';
-import { Check, FileText, BookOpen, Brain, ArrowRight } from 'lucide-react';
+import { Check, TrendingUp, Calendar, Rocket, ArrowRight } from 'lucide-react';
 
 export default function FortifyFeaturesPage() {
-  const projectFiles = [
-    { name: 'Chapter 1: Introduction', type: 'Markdown', status: 'Draft', words: '2,450', statusColor: 'bg-yellow-500' },
-    { name: 'Literature Review', type: 'Markdown', status: 'Review', words: '5,230', statusColor: 'bg-blue-500' },
-    { name: 'Research Notes', type: 'Text', status: 'Complete', words: '1,890', statusColor: 'bg-green-500' },
-    { name: 'References.pdf', type: 'PDF', status: 'Annotated', words: 'N/A', statusColor: 'bg-purple-500' },
-    { name: 'Bibliography', type: 'BibTeX', status: 'Complete', words: 'N/A', statusColor: 'bg-green-500' },
+  const milestones = [
+    { phase: 'Stealth Beta', duration: 'Month 1', users: '10K', city: 'Bangalore', status: 'Draft', statusColor: 'bg-yellow-500' },
+    { phase: 'City Expansion', duration: 'Months 2-3', users: '50K', city: '5 Metros', status: 'Planned', statusColor: 'bg-blue-500' },
+    { phase: 'Scaling', duration: 'Months 4-8', users: '500K', city: '15 Cities', status: 'Growth', statusColor: 'bg-green-500' },
+    { phase: 'National Dominance', duration: 'Year 2', users: '1.5M+', city: 'All India', status: 'Target', statusColor: 'bg-purple-500' },
+    { phase: 'International', duration: 'Year 3+', users: '3M+', city: 'Southeast Asia', status: 'Vision', statusColor: 'bg-pink-500' },
   ];
 
   return (
-    <div className="min-h-screen bg-white px-6 py-16">
+    <div id="market" className="min-h-screen bg-white px-6 py-16">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto text-center mb-20">
-        <p className="text-green-600 text-sm font-medium mb-4">Essential Features</p>
+        <p className="text-green-600 text-sm font-medium mb-4">Go-To-Market Strategy</p>
         <h1 className="text-6xl font-bold mb-6 text-black">
-          Discover the Features That<br />Make Pensyl Stand Out
+          From Launch to<br />National Dominance
         </h1>
         <p className="text-gray-600 text-lg">
-          The first real Writing IDE with whole-project AI context, built-in citations,<br />
-          and multi-file workflows designed for academic and professional writing.
+          A phased approach: stealth beta → city expansion → national scaling → international growth.<br />
+          Organic-first acquisition with community-driven viral loops.
         </p>
       </div>
 
@@ -28,67 +28,67 @@ export default function FortifyFeaturesPage() {
       <div className="max-w-7xl mx-auto space-y-8">
         {/* First Feature Row */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Project Files Feature */}
+          {/* Timeline Table */}
           <div className="bg-gray-50 rounded-3xl p-8 relative overflow-hidden">
             <div className="flex items-center gap-3 mb-2">
-              <h2 className="text-2xl font-semibold text-black">Project Files</h2>
-              <span className="bg-black text-white text-xs px-3 py-1 rounded-full">5 Files</span>
+              <h2 className="text-2xl font-semibold text-black">Launch Roadmap</h2>
+              <span className="bg-black text-white text-xs px-3 py-1 rounded-full">5 Phases</span>
             </div>
-            <p className="text-gray-600 text-sm mb-6">All files in your writing project</p>
+            <p className="text-gray-600 text-sm mb-6">Growth milestones from launch to Year 3</p>
 
             {/* Table */}
             <div className="space-y-3">
               {/* Table Header */}
               <div className="grid grid-cols-4 gap-4 text-sm font-medium text-gray-700 pb-2 border-b border-gray-200">
-                <div>File Name</div>
-                <div>Type</div>
+                <div>Phase</div>
+                <div>Timeline</div>
+                <div>Users</div>
                 <div>Status</div>
-                <div>Words</div>
               </div>
 
               {/* Table Rows */}
-              {projectFiles.map((item, index) => (
+              {milestones.map((item, index) => (
                 <div key={index} className="grid grid-cols-4 gap-4 items-center text-sm py-2">
-                  <div className="text-gray-800">{item.name}</div>
-                  <div className="text-gray-600">{item.type}</div>
+                  <div className="text-gray-800 font-medium">{item.phase}</div>
+                  <div className="text-gray-600">{item.duration}</div>
+                  <div className="text-gray-800 font-semibold">{item.users}</div>
                   <div>
                     <span className={`${item.statusColor} text-white px-3 py-1 rounded-full text-xs`}>
                       {item.status}
                     </span>
                   </div>
-                  <div className="text-gray-800">{item.words}</div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Organize Research Feature */}
+          {/* Marketing Strategy */}
           <div>
-            <h2 className="text-3xl font-semibold mb-6 text-black">Organize and understand your research.</h2>
+            <h2 className="text-3xl font-semibold mb-6 text-black">Multi-channel growth engine.</h2>
             <p className="text-gray-600 mb-8">
-              AI has full access to all your chapters, notes, research papers, and citations. It can write new sections using all your research and maintain context across your entire project.
+              Organic-heavy acquisition with community-driven viral loops. Influencer partnerships with relationship coaches, Instagram/Reels campaigns, and a powerful referral program delivering 20:1 ROI.
             </p>
 
             <div className="grid grid-cols-2 gap-6">
-              {/* PDF Extraction */}
+              {/* Channel 1 */}
               <div className="bg-gray-50 rounded-3xl p-6">
                 <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-4">
-                  <FileText className="w-6 h-6 text-white" />
+                  <TrendingUp className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">PDF Extraction</h3>
+                <h3 className="text-lg font-semibold mb-2">Influencer Marketing</h3>
                 <p className="text-gray-600 text-sm">
-                  Extract text, citations, and notes from research PDFs. AI can summarize and reference content automatically.
+                  Relationship coaches, dating experts, and lifestyle influencers. 20% budget, 12:1 expected ROI.
                 </p>
               </div>
 
-              {/* Citation Management */}
+              {/* Channel 2 */}
               <div className="bg-gray-50 rounded-3xl p-6">
                 <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-4">
-                  <BookOpen className="w-6 h-6 text-white" />
+                  <Calendar className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Citation Management</h3>
+                <h3 className="text-lg font-semibold mb-2">Community Events</h3>
                 <p className="text-gray-600 text-sm">
-                  Native APA/MLA/Chicago formatting, auto-bibliography generation, and Zotero integration.
+                  Speed dating, social meetups, networking dinners. 50+ events/month across cities. Revenue + acquisition.
                 </p>
               </div>
             </div>
@@ -97,10 +97,10 @@ export default function FortifyFeaturesPage() {
 
         {/* Second Feature Row */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* AI-Powered Writing Feature */}
+          {/* Unit Economics */}
           <div>
             <h2 className="text-4xl font-semibold mb-8 text-black">
-              Whole-project AI context<br />for intelligent writing.
+              Unit economics that<br />make VCs excited.
             </h2>
 
             <div className="space-y-4 mb-8">
@@ -109,7 +109,7 @@ export default function FortifyFeaturesPage() {
                   <Check className="w-5 h-5 text-white" />
                 </div>
                 <p className="text-gray-700">
-                  AI understands your entire project context - all chapters, notes, research papers, and citations in one unified workspace
+                  <strong>CAC: ₹100-150</strong> — Organic + referral heavy, minimal paid acquisition. Community-driven viral loops reduce cost per user.
                 </p>
               </div>
 
@@ -118,7 +118,7 @@ export default function FortifyFeaturesPage() {
                   <Check className="w-5 h-5 text-white" />
                 </div>
                 <p className="text-gray-700">
-                  Write new sections using all your research. AI can reference multiple files simultaneously with #filename syntax
+                  <strong>LTV: ₹8,000-12,000</strong> — 12-18 month retention with ₹400-600 avg/user/month across subscriptions, events, and à la carte features.
                 </p>
               </div>
 
@@ -127,13 +127,13 @@ export default function FortifyFeaturesPage() {
                   <Check className="w-5 h-5 text-white" />
                 </div>
                 <p className="text-gray-700">
-                  Maintain semantic understanding across 100K+ word projects. AI never loses sight of your research context
+                  <strong>LTV:CAC = 60:1</strong> — Industry best (healthy is 3:1+, we&apos;re 20x better). Payback period: 2-3 months.
                 </p>
               </div>
             </div>
 
             <button className="group bg-black text-white px-8 py-4 rounded-full flex items-center gap-3 hover:bg-gray-800 transition-colors">
-              Learn More
+              View Full Financials
               <div className="relative w-10 h-10 bg-lime-300 rounded-full flex items-center justify-center overflow-hidden">
                 <ArrowRight className="w-5 h-5 text-black absolute transition-all duration-300 group-hover:translate-x-6 group-hover:opacity-0" />
                 <ArrowRight className="w-5 h-5 text-black absolute opacity-0 -translate-x-1.5 transition-all duration-300 delay-200 group-hover:translate-x-0 group-hover:opacity-100" />
@@ -141,49 +141,72 @@ export default function FortifyFeaturesPage() {
             </button>
           </div>
 
-          {/* Writing Metrics Feature */}
+          {/* Financial Metrics */}
           <div className="bg-gray-50 rounded-3xl p-8">
             <div className="space-y-6">
-              {/* Project Statistics */}
+              {/* Key Metrics */}
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-gray-700 font-medium">Project Statistics</span>
+                  <span className="text-gray-700 font-medium">Key Metrics</span>
                   <div className="flex gap-2">
-                    <span className="bg-lime-300 px-4 py-2 rounded-lg text-sm font-medium">5 files</span>
-                    <span className="bg-blue-400 px-4 py-2 rounded-lg text-sm font-medium text-white">9,570 words</span>
-                    <span className="bg-purple-500 px-4 py-2 rounded-lg text-sm font-medium text-white">12 citations</span>
+                    <span className="bg-blue-400 px-4 py-2 rounded-lg text-sm font-medium text-white">10 Mo. BE</span>
+                    <span className="bg-purple-500 px-4 py-2 rounded-lg text-sm font-medium text-white">50% Margin</span>
                   </div>
                 </div>
               </div>
 
-              {/* Writing Progress */}
+              {/* Premium Conversion */}
               <div className="bg-white rounded-2xl p-6">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <p className="text-gray-600 text-sm mb-1">Writing Progress</p>
+                    <p className="text-gray-600 text-sm mb-1">Premium Conversion Rate</p>
                     <div className="flex items-baseline gap-2">
-                      <span className="text-4xl font-bold">68%</span>
-                      <span className="text-green-600 text-sm font-medium">+12% this week</span>
+                      <span className="text-4xl font-bold">20%</span>
+                      <span className="text-green-600 text-sm font-medium">Target by Year 3</span>
                     </div>
                   </div>
                   <div className="flex gap-4 items-center">
                     <div className="flex items-center gap-2">
-                      <Brain className="w-6 h-6 text-purple-500" />
-                      <span className="text-xs text-gray-600">AI Assisted</span>
+                      <Rocket className="w-6 h-6 text-purple-500" />
+                      <span className="text-xs text-gray-600">Growth</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Citation Compliance */}
+              {/* Valuation */}
               <div className="bg-white rounded-2xl p-6">
-                <h3 className="text-xl font-semibold mb-2">Citation Compliance</h3>
-                <p className="text-gray-600 text-sm mb-4">APA Format Check</p>
-                <div className="flex items-center gap-4">
-                  <div className="flex-1 bg-gray-200 rounded-full h-3">
-                    <div className="bg-green-500 h-3 rounded-full" style={{ width: '92%' }}></div>
+                <h3 className="text-xl font-semibold mb-2">Valuation Trajectory</h3>
+                <p className="text-gray-600 text-sm mb-4">Projected exit potential</p>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-4">
+                    <span className="text-sm text-gray-500 w-16">Year 1</span>
+                    <div className="flex-1 bg-gray-200 rounded-full h-3">
+                      <div className="bg-[#4CAF50] h-3 rounded-full" style={{ width: '5%' }}></div>
+                    </div>
+                    <span className="text-sm font-medium w-20 text-right">$1-2M</span>
                   </div>
-                  <span className="text-sm font-medium">92%</span>
+                  <div className="flex items-center gap-4">
+                    <span className="text-sm text-gray-500 w-16">Year 2</span>
+                    <div className="flex-1 bg-gray-200 rounded-full h-3">
+                      <div className="bg-[#4CAF50] h-3 rounded-full" style={{ width: '25%' }}></div>
+                    </div>
+                    <span className="text-sm font-medium w-20 text-right">$20-50M</span>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <span className="text-sm text-gray-500 w-16">Year 3</span>
+                    <div className="flex-1 bg-gray-200 rounded-full h-3">
+                      <div className="bg-[#4CAF50] h-3 rounded-full" style={{ width: '60%' }}></div>
+                    </div>
+                    <span className="text-sm font-medium w-20 text-right">$100-200M</span>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <span className="text-sm text-gray-500 w-16">Year 5</span>
+                    <div className="flex-1 bg-gray-200 rounded-full h-3">
+                      <div className="bg-[#4CAF50] h-3 rounded-full" style={{ width: '100%' }}></div>
+                    </div>
+                    <span className="text-sm font-medium w-20 text-right">$500M-1B</span>
+                  </div>
                 </div>
               </div>
             </div>

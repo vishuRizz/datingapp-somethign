@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDown, ArrowRight, Moon, Sun } from "lucide-react";
+import { ChevronDown, ArrowRight, Moon, Sun, Heart } from "lucide-react";
 import { useState } from "react";
 
 export function HeroNav() {
@@ -29,7 +29,10 @@ export function HeroNav() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <span className="text-2xl font-bold text-gray-900">Pensyl</span>
+          <div className="w-9 h-9 bg-gradient-to-br from-[#4CAF50] to-[#C7F36A] rounded-xl flex items-center justify-center">
+            <Heart className="w-5 h-5 text-white" fill="white" />
+          </div>
+          <span className="text-2xl font-bold text-gray-900">CONNECT</span>
         </Link>
 
         {/* Desktop Links */}
@@ -42,14 +45,14 @@ export function HeroNav() {
             <button
               className="flex items-center gap-1 text-gray-700 hover:text-[#4CAF50] font-medium"
             >
-              All Pages <ChevronDown className="w-4 h-4" />
+              Pitch Deck <ChevronDown className="w-4 h-4" />
             </button>
             {open && (
               <div className="absolute right-0 mt-3 w-48 bg-white rounded-xl shadow-xl border border-gray-200 py-2 z-50">
-                <Link href="#about" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">About</Link>
-                <Link href="#pricing" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Pricing</Link>
-                <Link href="#features" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Features</Link>
-                <Link href="#contact" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Contact</Link>
+                <Link href="#problem" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">The Problem</Link>
+                <Link href="#solution" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Our Solution</Link>
+                <Link href="#market" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Market</Link>
+                <Link href="#pricing" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Business Model</Link>
               </div>
             )}
           </div>
@@ -77,10 +80,10 @@ export function HeroNav() {
           {dark ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
         </button>
         <Link
-          href="/get-started"
+          href="#contact"
           className="hidden lg:flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:bg-[#4CAF50] active:bg-[#4CAF50] transition-colors font-medium"
         >
-          Get Started <ArrowRight className="w-4 h-4" />
+          Schedule a Call <ArrowRight className="w-4 h-4" />
         </Link>
         </div>
       </div>
