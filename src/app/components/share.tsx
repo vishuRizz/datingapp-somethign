@@ -63,10 +63,7 @@ const HeroCard = () => {
             </h1>
 
             {/* Subtext */}
-            <p className="text-gray-300 text-sm md:text-base max-w-xl mb-8 leading-relaxed">
-              ₹1,400 crore market by 2030. 100M+ potential users. First-mover advantage for a trust-first platform.
-              Backed by 100+ apps, 10+ years, and proven execution.
-            </p>
+          
 
             {/* Contact Info */}
             <div className="flex flex-wrap justify-center gap-4 mb-8">
