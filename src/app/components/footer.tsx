@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Heart, Instagram, Linkedin, Mail, Globe } from 'lucide-react';
+import { Heart, Instagram, Linkedin, Mail } from 'lucide-react';
 
 const FortifyFooter = () => {
   const [email, setEmail] = useState('');
@@ -25,9 +25,7 @@ const FortifyFooter = () => {
             <p className="text-gray-600 text-sm leading-relaxed mb-4">
               The Dating App Built for Real Connections. Stop Swiping. Start Connecting.
             </p>
-            <p className="text-gray-500 text-xs leading-relaxed mb-6">
-              Built by <strong>elevenX</strong>: 100+ apps, 50M+ users, 10+ years of proven execution. Noida, India.
-            </p>
+           
             <div className="flex gap-4">
               <a href="#" className="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-[#4CAF50] transition-colors">
                 <Instagram size={20} />
@@ -42,9 +40,6 @@ const FortifyFooter = () => {
               </a>
               <a href="mailto:srivastavaavi26@gmail.com" className="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-[#4CAF50] transition-colors">
                 <Mail size={20} />
-              </a>
-              <a href="https://elevenx.in" className="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-[#4CAF50] transition-colors">
-                <Globe size={20} />
               </a>
             </div>
           </div>
@@ -69,10 +64,6 @@ const FortifyFooter = () => {
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-gray-500" />
                 <a href="mailto:srivastavaavi26@gmail.com" className="text-gray-600 hover:text-[#4CAF50] transition-colors">srivastavaavi26@gmail.com</a>
-              </li>
-              <li className="flex items-center gap-2">
-                <Globe className="w-4 h-4 text-gray-500" />
-                <a href="https://elevenx.in" className="text-gray-600 hover:text-[#4CAF50] transition-colors">elevenx.in</a>
               </li>
             </ul>
             <div className="mt-6 bg-gray-100 rounded-2xl p-4">
@@ -113,7 +104,7 @@ const FortifyFooter = () => {
           </div>
           
           <div className="mt-8 text-center text-gray-600 text-sm">
-            © 2026 CONNECT by elevenX • Pitch Deck • Confidential
+            © 2026 CONNECT • Pitch Deck • Confidential
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Phone, Mail, Globe, Building } from 'lucide-react';
+import { ArrowRight, Phone, Mail, Building } from 'lucide-react';
 
 const HeroCard = () => {
   return (
@@ -65,7 +65,7 @@ const HeroCard = () => {
             {/* Subtext */}
             <p className="text-gray-300 text-sm md:text-base max-w-xl mb-8 leading-relaxed">
               ₹1,400 crore market by 2030. 100M+ potential users. First-mover advantage for a trust-first platform.
-              Built by elevenX: 100+ apps, 10+ years, proven execution.
+              Backed by 100+ apps, 10+ years, and proven execution.
             </p>
 
             {/* Contact Info */}
@@ -75,12 +75,8 @@ const HeroCard = () => {
                 <span>srivastavaavi26@gmail.com</span>
               </div>
               <div className="flex items-center gap-2 text-gray-400 text-sm">
-                <Globe className="w-4 h-4" />
-                <span>elevenx.in</span>
-              </div>
-              <div className="flex items-center gap-2 text-gray-400 text-sm">
                 <Building className="w-4 h-4" />
-                <span>elevenX, Noida</span>
+                <span>Noida, India</span>
               </div>
             </div>
 

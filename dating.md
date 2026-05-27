@@ -692,7 +692,7 @@ Break-even: Month 10-12
 
 ## **Who's Building This?**
 
-### **Company: elevenX**
+### **Company: CONNECT**
 - **Location:** Noida, India (startup hub)
 - **Experience:** 100+ apps built, 10+ years in market
 - **Expertise:** 
@@ -962,7 +962,7 @@ CONNECT — the dating app built on trust, psychology, and community.
 - Profitability: Year 2+
 
 ### **Execution:**
-- elevenX: 100+ apps, 10+ years experience
+- 100+ apps, 10+ years experience
 - Proven team, fast delivery, quality focused
 - Dating app expertise + India market knowledge
 
@@ -1037,8 +1037,8 @@ MONTH 5: Full handover to you
 
 📧 **Email:** srivastavaavi26@gmail.com  
 📱 **Phone:** [Your number]  
-🌐 **Website:** elevenx.in  
-💼 **Company:** elevenX, Noida  
+🌐 **Website:** [Your website]  
+💼 **Company:** CONNECT, Noida  
 
 ---
 
@@ -1337,7 +1337,7 @@ We'll discuss:
 
 📧 **srivastavaavi26@gmail.com**  
 📱 **[Your Phone]**  
-🌐 **elevenx.in**  
+🌐 **[Your website]**  
 
 ---
 
@@ -1436,7 +1436,7 @@ Available upon request:
 
 **Document Type:** Investor/Client Pitch Deck  
 **Audience:** Investors, Partners, Stakeholders  
-**Prepared By:** elevenX  
+**Prepared By:** CONNECT  
 **Date:** May 2026  
 **Status:** Ready for Presentation  
 

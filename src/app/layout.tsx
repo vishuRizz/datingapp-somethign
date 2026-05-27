@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     "startup pitch deck",
     "dating app business model",
   ],
-  authors: [{ name: "elevenX" }],
-  creator: "elevenX",
-  publisher: "elevenX",
+  authors: [{ name: "CONNECT" }],
+  creator: "CONNECT",
+  publisher: "CONNECT",
   formatDetection: {
     email: false,
     address: false,
@@ -155,19 +155,6 @@ export default function RootLayout({
     "softwareVersion": "1.0",
   };
 
-  const organizationJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "elevenX",
-    "url": "https://elevenx.in",
-    "description": "App development company specializing in dating, social, fintech, and marketplace applications. 100+ apps built, 50M+ users served.",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Sales",
-      "email": "srivastavaavi26@gmail.com",
-    },
-  };
-
   return (
     <html lang="en">
       <body
@@ -176,10 +163,6 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
         <SmoothScroll />
         {children}
